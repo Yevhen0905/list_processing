@@ -24,7 +24,6 @@
 
   const handleClickTab = () => {
     activateTab(props.name);
-    console.log(props.name);
   };
 </script>
 

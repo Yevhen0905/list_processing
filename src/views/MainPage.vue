@@ -6,14 +6,14 @@
         <SortingByParams
           :sorting-buttons="sortingButtons"
           v-model="sortingKey"
-          @on-sort="sortData"
+          @click="resetDirectionWhenChangeKey"
         />
         <SortingByDirection
           :sorting-direction="sortingDirection"
           v-model="sortingDirect"
           @on-sort="sortData"
         />
-        <button class="btn_reset" @click="resetSorting">
+        <button class="btn_reset" @click="resetSortingAndFiltering">
           reset sorting and filtering
         </button>
       </div>
@@ -30,10 +30,14 @@
 
     <div class="tab_view">
       <h2 class="title">LIST</h2>
-      <SharedTabs :active-tab="'tables'">
+      <SharedTabs :active-tab="activeTab">
         <template #controls class="tab_view_control">
-          <SharedTabControl name="tables">TABLES</SharedTabControl>
-          <SharedTabControl name="preview">PREVIEW</SharedTabControl>
+          <SharedTabControl name="tables" @click="changeTab('tables')"
+            >TABLES</SharedTabControl
+          >
+          <SharedTabControl name="preview" @click="changeTab('preview')"
+            >PREVIEW</SharedTabControl
+          >
         </template>
 
         <template #default="{activeTab}">
@@ -62,13 +66,18 @@
   import SortingByParams from '../components/SortingByParams.vue';
   import SortingByDirection from '../components/SortingByDirection.vue';
 
+  import {useRoute, useRouter} from 'vue-router';
   import {ref, computed, onMounted, watch} from 'vue';
+
+  const route = useRoute();
+  const router = useRouter();
 
   const loading = ref(true);
   const searchByName = ref('');
   const listPeople = ref([]);
   const sortingKey = ref('');
   const sortingDirect = ref('');
+  const activeTab = ref(route.query.tab || 'tables');
 
   const sortingButtons = ref([
     {
@@ -106,20 +115,38 @@
     return listPeople.value;
   });
 
-  const sortData = () => {
+  const sortedData = computed(() => {
     const key = sortingKey.value;
     const order = sortingDirect.value;
-    console.log(filterByName.value.length);
+
     if (order === 'asc') {
-      filterByName.value.sort((a, b) => (a[key] > b[key] ? 1 : -1));
+      return filterByName.value
+        .slice()
+        .sort((a, b) => (convertKey(a[key]) > convertKey(b[key]) ? 1 : -1));
     } else {
-      filterByName.value.sort((a, b) => (a[key] < b[key] ? 1 : -1));
+      return filterByName.value
+        .slice()
+        .sort((a, b) => (convertKey(a[key]) < convertKey(b[key]) ? 1 : -1));
+    }
+  });
+
+  const sortData = () => {
+    if (sortingKey.value) {
+      listPeople.value = sortedData.value;
     }
   };
 
-  const resetSorting = () => {
+  const convertKey = (key) => {
+    return isNaN(key) ? key.en.split(' ')?.[0] : key;
+  };
+
+  const resetSortingAndFiltering = () => {
     searchByName.value = sortingKey.value = sortingDirect.value = '';
-    listPeople.value.sort((a, b) => (a['id'] > b['id'] ? 1 : -1));
+    getFetch();
+  };
+
+  const resetDirectionWhenChangeKey = () => {
+    sortingDirect.value = '';
   };
 
   const getFetch = async () => {
@@ -129,12 +156,24 @@
       setTimeout(() => {
         listPeople.value = data;
         loading.value = false;
-        console.log(listPeople.value.length);
       }, 1000);
     } catch (e) {
       console.log(e);
     }
   };
+
+  const changeTab = (tabName) => {
+    activeTab.value = tabName;
+  };
+
+  watch(activeTab, (newValue) => {
+    router.replace({query: {tab: newValue}});
+  });
+
+  onMounted(() => {
+    const tab = route.query.tab || 'tables';
+    activeTab.value = tab;
+  });
 
   onMounted(getFetch);
 </script>

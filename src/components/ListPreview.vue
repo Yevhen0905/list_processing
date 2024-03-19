@@ -41,23 +41,23 @@
     }
   });
 
-  const initIntersectionObserver = () => {
-    const options = {
-      threshold: 0.3
-    };
+//   const initIntersectionObserver = () => {
+//     const options = {
+//       threshold: 0.3
+//     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-        }
-      });
-    }, options);
+//     const observer = new IntersectionObserver((entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add('in-view');
+//         }
+//       });
+//     }, options);
 
-    document.querySelectorAll('.list_tables').forEach((item) => {
-      observer.observe(item);
-    });
-  };
+//     document.querySelectorAll('.list_tables').forEach((item) => {
+//       observer.observe(item);
+//     });
+//   };
 
   const initInterVideoObserver = () => {
     const options = {
@@ -81,7 +81,7 @@
     });
   };
 
-  onMounted(initIntersectionObserver);
+//   onMounted(initIntersectionObserver);
   onMounted(initInterVideoObserver);
 </script>
 
@@ -96,15 +96,15 @@
     padding: 0;
     width: 100%;
     min-height: 290px;
-    opacity: 0;
-    transform: translate(0px, 3rem);
-    transition: all 1s ease-in-out;
+    // opacity: 0;
+    // transform: translate(0px, 3rem);
+    // transition: all 1s ease-in-out;
   }
 
-  .in-view {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
+//   .in-view {
+//     opacity: 1;
+//     transform: translate(0, 0);
+//   }
 
   .tables_info {
     width: 50%;

@@ -12,6 +12,7 @@
         </div>
         <div class="tables_age">{{ people?.age }} years</div>
         <div class="tables_tel">{{ people?.phone }}</div>
+        <div>{{ people.id }}</div>
       </div>
     </TransitionGroup>
   </div>
@@ -27,25 +28,25 @@
     }
   });
 
-  const initIntersectionObserver = () => {
-    const options = {
-      threshold: 0.5
-    };
+//   const initIntersectionObserver = () => {
+//     const options = {
+//       threshold: 0.5
+//     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-        }
-      });
-    }, options);
+//     const observer = new IntersectionObserver((entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add('in-view');
+//         }
+//       });
+//     }, options);
 
-    document.querySelectorAll('.list_tables').forEach((item) => {
-      observer.observe(item);
-    });
-  };
+//     document.querySelectorAll('.list_tables').forEach((item) => {
+//       observer.observe(item);
+//     });
+//   };
 
-  onMounted(initIntersectionObserver);
+//   onMounted(initIntersectionObserver);
 </script>
 
 <style lang="scss">
@@ -63,14 +64,14 @@
     opacity: 0;
   }
 
-  .list_tables {
-    opacity: 0;
-    transform: translate(0px, 3rem);
-    transition: all 1s ease-in-out;
-  }
+//   .list_tables {
+//     opacity: 0;
+//     transform: translate(0px, 3rem);
+//     transition: all 1s ease-in-out;
+//   }
 
-  .in-view {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
+//   .in-view {
+//     opacity: 1;
+//     transform: translate(0, 0);
+//   }
 </style>

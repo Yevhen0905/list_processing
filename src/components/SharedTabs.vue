@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-  import {onBeforeMount, computed, ref, provide, watch} from 'vue';
+  import {onBeforeMount, ref, provide} from 'vue';
 
   const emit = defineEmits(['update:active-tab']);
   const props = defineProps({
@@ -29,16 +29,8 @@
   provide('isActiveTab', (name) => active.value === name.toLowerCase());
   provide('activateTab', (name) => {
     active.value = name.toLowerCase();
-
-    console.log(active.value);
   });
 
-  watch(
-    () => props.activeTab,
-    (activeTab) => {
-      active.value = activeTab;
-    }
-  );
 </script>
 
 <style lang="scss">
