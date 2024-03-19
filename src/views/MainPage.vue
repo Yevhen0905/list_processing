@@ -67,7 +67,7 @@
   import SortingByDirection from '../components/SortingByDirection.vue';
 
   import {useRoute, useRouter} from 'vue-router';
-  import {ref, computed, onMounted, watch} from 'vue';
+  import {ref, computed, onMounted, watch, onBeforeMount} from 'vue';
 
   const route = useRoute();
   const router = useRouter();
@@ -157,6 +157,7 @@
         listPeople.value = data;
         loading.value = false;
       }, 1000);
+      setQueryToDownload();
     } catch (e) {
       console.log(e);
     }
@@ -170,9 +171,13 @@
     router.replace({query: {tab: newValue}});
   });
 
-  onMounted(() => {
+  const setQueryToDownload = () => {
     const tab = route.query.tab || 'tables';
     activeTab.value = tab;
+  };
+
+  onBeforeMount(() => {
+    router.replace({query: {tab: activeTab.value}});
   });
 
   onMounted(getFetch);
