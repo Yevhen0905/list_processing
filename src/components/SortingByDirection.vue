@@ -60,11 +60,11 @@
     width: 100%;
     border: 1px solid rgb(128 128 128 / 58%);
     outline: none;
-    background: transparent;
     padding: 5px;
     margin-top: 3px;
     cursor: pointer;
     transition: all 0.4s ease;
+    background: #fff;
   }
 
   .sorting_button_param_active {

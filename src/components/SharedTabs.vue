@@ -30,7 +30,6 @@
   provide('activateTab', (name) => {
     active.value = name.toLowerCase();
   });
-
 </script>
 
 <style lang="scss">
@@ -38,6 +37,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    border: 1px solid rgb(128 128 128 / 48%);
+    border: 2px solid rgba(128, 128, 128, 0.48);
+    background: #fff;
   }
 </style>

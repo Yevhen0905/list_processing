@@ -1,38 +1,45 @@
 <template>
   <div class="preview_list_tables">
-    <TransitionGroup name="list">
-      <div
-        class="list_tables"
-        :class="{without_video: !people.video}"
-        v-for="(people, index) in listPeople"
-        :key="index"
-      >
-        <div class="tables_info">
-          <div class="tables_initials">
-            <div class="tables_img">
-              <img :src="`/list_people/src/assets/img/${people?.image}.svg`" alt="" />
-            </div>
-            <div class="tables_name">{{ people?.name?.en }}</div>
+    <div
+      ref="listItemRefs"
+      class="list_tables"
+      v-for="(people, index) in listPeople"
+      :key="index"
+    >
+      <div class="tables_info">
+        <div class="tables_initials">
+          <div class="tables_img">
+            <img :src="`/list_people/src/assets/img/${people?.image}.svg`" alt="" />
           </div>
-          <div class="tables_age">{{ people?.age }} years</div>
-          <div class="tables_tel">{{ people?.phone }}</div>
-          <div class="tables_description">{{ people?.phrase?.en }}</div>
+          <div class="tables_name">{{ people?.name?.en }}</div>
         </div>
-        <div v-if="people.video" class="tables_video">
-          <video width="100%" height="100%" controls muted loop preload="none">
-            <source
-              :src="`/list_people/src/assets/video/${people?.video}.mp4`"
-              type="video/mp4"
-            />
-          </video>
-        </div>
+        <div class="tables_age">{{ people?.age }} years</div>
+        <div class="tables_tel">{{ people?.phone }}</div>
+        <div class="tables_description">{{ people?.phrase?.en }}</div>
       </div>
-    </TransitionGroup>
+      <div v-if="people.video" class="tables_video">
+        <video
+          ref="listItemsVideo"
+          width="100%"
+          height="100%"
+          controls
+          muted
+          loop
+          preload="none"
+        >
+          <source
+            :src="`/list_people/src/assets/video/${people?.video}.mp4`"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div v-else class="tables_video no_video_available">no video available</div>
+    </div>
   </div>
 </template>
 
 <script setup>
-  import {ref, onMounted} from 'vue';
+  import {ref, onMounted, watch} from 'vue';
 
   const props = defineProps({
     listPeople: {
@@ -41,32 +48,36 @@
     }
   });
 
+  const listItemRefs = ref([]);
+  const listItemsVideo = ref([]);
+
+  let observer = null;
+  let observerVideo = null;
+
   const initIntersectionObserver = () => {
     const options = {
       threshold: 0.1
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
+          entry.target.classList.add('visible');
         }
       });
     }, options);
 
-    document.querySelectorAll('.list_tables').forEach((item) => {
+    listItemRefs.value.forEach((item) => {
       observer.observe(item);
     });
   };
 
   const initInterVideoObserver = () => {
     const options = {
-      root: null,
-      rootMargin: '0px',
       threshold: 1
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    observerVideo = new IntersectionObserver((entries) => {
       entries.forEach(async (entry) => {
         if (entry.isIntersecting) {
           await entry.target.play();
@@ -76,10 +87,28 @@
       });
     }, options);
 
-    document.querySelectorAll('video').forEach((item) => {
-      observer.observe(item);
+    listItemsVideo.value.forEach((item) => {
+      observerVideo.observe(item);
     });
   };
+
+  watch(listItemRefs.value, (newItem, oldItem) => {
+    oldItem.forEach((item) => {
+      observer.unobserve(item);
+    });
+    newItem.forEach((item) => {
+      observer.observe(item);
+    });
+  });
+
+  watch(listItemsVideo.value, (newItem, oldItem) => {
+    oldItem.forEach((item) => {
+      observerVideo.unobserve(item);
+    });
+    newItem.forEach((item) => {
+      observerVideo.observe(item);
+    });
+  });
 
   onMounted(initIntersectionObserver);
   onMounted(initInterVideoObserver);
@@ -88,20 +117,26 @@
 <style lang="scss" scoped>
   .preview_list_tables {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .list_tables {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
     width: 100%;
-    min-height: 290px;
+    height: 230px;
+    border: 1px solid #80808082;
+    margin: 5px 0;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translate(0px, 3rem);
     transition: all 1s ease-in-out;
+    background: #fff;
   }
 
-  .in-view {
+  .visible {
     opacity: 1;
     transform: translate(0, 0);
   }
@@ -111,7 +146,7 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
   }
 
   .tables_description {
@@ -124,31 +159,20 @@
     box-shadow: -4px 2px 6px rgba(0, 0, 0, 0.2);
   }
 
-  .without_video {
-    width: 49.8%;
+  .no_video_available {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    text-align: center;
+    font-size: 18px;
 
-    .tables_info {
-      width: 100%;
+    @media only screen and (max-width: 640px) {
+      font-size: 16px;
     }
   }
 
   .tables_video video {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-  }
-
-  .list-move {
-    transition: transform 0.4s ease;
-  }
-
-  .list-enter-active,
-  .list-leave-active {
-    transition: opacity 0.5s;
-  }
-
-  .list-enter,
-  .list-leave-to {
-    opacity: 0;
   }
 </style>

@@ -1,24 +1,27 @@
 <template>
   <div class="wrapper_list">
-    <TransitionGroup name="list" tag="div">
-      <div class="list_tables" v-for="(people, index) in listPeople" :key="index">
-        <div class="tables_initials">
-          <div class="tables_img">
-            <img :src="`/list_people/src/assets/img/${people.image}.svg`" alt="" />
-          </div>
-          <div class="tables_name">
-            {{ people?.name?.en }}
-          </div>
+    <div
+      ref="listItemRefs"
+      class="list_tables"
+      v-for="(people, index) in listPeople"
+      :key="index"
+    >
+      <div class="tables_initials">
+        <div class="tables_img">
+          <img :src="`/list_people/src/assets/img/${people.image}.svg`" alt="" />
         </div>
-        <div class="tables_age">{{ people?.age }} years</div>
-        <div class="tables_tel">{{ people?.phone }}</div>
+        <div class="tables_name">
+          {{ people?.name?.en }}
+        </div>
       </div>
-    </TransitionGroup>
+      <div class="tables_age">{{ people?.age }} years</div>
+      <div class="tables_tel">{{ people?.phone }}</div>
+    </div>
   </div>
 </template>
 
 <script setup>
-  import {ref, onMounted, computed, watch} from 'vue';
+  import {ref, onMounted, watch} from 'vue';
 
   const props = defineProps({
     listPeople: {
@@ -27,49 +30,56 @@
     }
   });
 
+  const listItemRefs = ref([]);
+
+  let observer;
+
   const initIntersectionObserver = () => {
     const options = {
-      threshold: 0.5
+      threshold: 0.3
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
+          entry.target.classList.add('visible');
         }
       });
     }, options);
 
-    document.querySelectorAll('.list_tables').forEach((item) => {
+    listItemRefs.value.forEach((item) => {
       observer.observe(item);
     });
   };
+
+  watch(listItemRefs.value, (newItem, oldItem) => {
+    oldItem.forEach((item) => {
+      observer.unobserve(item);
+    });
+    newItem.forEach((item) => {
+      observer.observe(item);
+    });
+  });
 
   onMounted(initIntersectionObserver);
 </script>
 
 <style lang="scss" scoped>
-  .list-move {
-    transition: transform 0.4s ease;
-  }
-
-  .list-enter-active,
-  .list-leave-active {
-    transition: opacity 0.5s;
-  }
-
-  .list-enter,
-  .list-leave-to {
-    opacity: 0;
-  }
-
   .list_tables {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #80808082;
+    margin: 5px 0;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translate(0px, 3rem);
     transition: all 1s ease-in-out;
+    background: #fff;
   }
 
-  .in-view {
+  .visible {
     opacity: 1;
     transform: translate(0, 0);
   }

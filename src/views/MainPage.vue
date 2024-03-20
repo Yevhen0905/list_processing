@@ -13,9 +13,6 @@
           v-model="sortingDirect"
           @on-sort="sortData"
         />
-        <button class="btn_reset" @click="resetSortingAndFiltering">
-          reset sorting and filtering
-        </button>
       </div>
       <div class="filter_by_name">
         <h3 class="title">Search by name</h3>
@@ -27,7 +24,9 @@
         />
       </div>
     </div>
-
+    <button class="btn_reset" @click="resetSortingAndFiltering">
+      reset sorting and filtering
+    </button>
     <div class="tab_view">
       <h2 class="title">LIST</h2>
       <SharedTabs :active-tab="activeTab">
@@ -157,7 +156,7 @@
         listPeople.value = data;
         loading.value = false;
       }, 1000);
-      setQueryToDownload();
+    //   setQueryToDownload();
     } catch (e) {
       console.log(e);
     }
@@ -167,14 +166,14 @@
     activeTab.value = tabName;
   };
 
+//   const setQueryToDownload = () => {
+//     const tab = route.query.tab || 'tables';
+//     activeTab.value = tab;
+//   };
+
   watch(activeTab, (newValue) => {
     router.replace({query: {tab: newValue}});
   });
-
-  const setQueryToDownload = () => {
-    const tab = route.query.tab || 'tables';
-    activeTab.value = tab;
-  };
 
   onBeforeMount(() => {
     router.replace({query: {tab: activeTab.value}});
@@ -187,19 +186,36 @@
   .wrapper_sorting_data {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 640px) {
+      gap: 10px;
+      flex-direction: column-reverse;
+    }
   }
 
   .title {
     margin-bottom: 8px;
     font-size: 20px;
+
+    @media only screen and (max-width: 640px) {
+      font-size: 18px;
+    }
   }
 
   .sorting_container {
     width: 70%;
+
+    @media only screen and (max-width: 640px) {
+      width: 100%;
+    }
   }
 
   .filter_by_name {
     width: 25%;
+
+    @media only screen and (max-width: 640px) {
+      width: 50%;
+    }
   }
 
   .filter_input {
@@ -214,13 +230,13 @@
   }
 
   .btn_reset {
+    width: fit-content;
     border: none;
     outline: none;
     border-radius: 5px;
     padding: 5px 10px;
     background: #ea5c58;
     color: white;
-    margin-top: 10px;
     transition: all 0.5s ease;
 
     &:hover {
