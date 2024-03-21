@@ -65,6 +65,11 @@
     cursor: pointer;
     transition: all 0.4s ease;
     background: #fff;
+
+    &:hover {
+      background-color: rgba(69, 181, 235, 0.81);
+      color: #fff;
+    }
   }
 
   .sorting_button_param_active {

@@ -11,11 +11,11 @@
           <div class="tables_img">
             <img :src="`/list_people/src/assets/img/${people?.image}.svg`" alt="" />
           </div>
-          <div class="tables_name">{{ people?.name?.en }}</div>
+          <div class="tables_name">{{ people?.name }}</div>
         </div>
         <div class="tables_age">{{ people?.age }} years</div>
         <div class="tables_tel">{{ people?.phone }}</div>
-        <div class="tables_description">{{ people?.phrase?.en }}</div>
+        <div class="tables_description">{{ people?.phrase }}</div>
       </div>
       <div v-if="people.video" class="tables_video">
         <video

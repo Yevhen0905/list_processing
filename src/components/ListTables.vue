@@ -11,7 +11,7 @@
           <img :src="`/list_people/src/assets/img/${people.image}.svg`" alt="" />
         </div>
         <div class="tables_name">
-          {{ people?.name?.en }}
+          {{ people?.name }}
         </div>
       </div>
       <div class="tables_age">{{ people?.age }} years</div>

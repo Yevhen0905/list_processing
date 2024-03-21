@@ -33,6 +33,7 @@
     padding: 10px 0;
     text-align: center;
     transition: all 0.1s;
+    cursor: pointer;
   }
 
   .shared_tab_control_active {

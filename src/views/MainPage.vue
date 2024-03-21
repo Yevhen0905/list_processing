@@ -11,7 +11,6 @@
         <SortingByDirection
           :sorting-direction="sortingDirection"
           v-model="sortingDirect"
-          @on-sort="sortData"
         />
       </div>
       <div class="filter_by_name">
@@ -24,9 +23,14 @@
         />
       </div>
     </div>
-    <button class="btn_reset" @click="resetSortingAndFiltering">
-      reset sorting and filtering
-    </button>
+    <div class="wrapper_btn">
+      <button class="btn_reset" @click="resetSortingAndFiltering">
+        reset sorting and filtering
+      </button>
+      <button class="btn_language" @click="changeLanguage">
+        {{ isLanguage ? 'ru' : 'en' }}
+      </button>
+    </div>
     <div class="tab_view">
       <h2 class="title">LIST</h2>
       <SharedTabs :active-tab="activeTab">
@@ -41,12 +45,12 @@
 
         <template #default="{activeTab}">
           <Loader class="loader" v-if="loading" />
-          <div v-else-if="filterByName.length">
+          <div v-else-if="filterAndSortedList.length">
             <template v-if="activeTab === 'tables'"
-              ><ListTables :list-people="filterByName"
+              ><ListTables :list-people="filterAndSortedList"
             /></template>
             <template v-if="activeTab === 'preview'"
-              ><ListPreview :list-people="filterByName"
+              ><ListPreview :list-people="filterAndSortedList"
             /></template>
           </div>
           <div v-else class="list_empty">not found</div>
@@ -76,6 +80,8 @@
   const listPeople = ref([]);
   const sortingKey = ref('');
   const sortingDirect = ref('');
+  const selectedLanguage = ref('en');
+  const isLanguage = ref(true);
   const activeTab = ref(route.query.tab || 'tables');
 
   const sortingButtons = ref([
@@ -104,40 +110,40 @@
     }
   ]);
 
-  const filterByName = computed(() => {
-    if (searchByName.value) {
-      return listPeople.value.filter((name) => {
-        return name?.name?.en.toLowerCase().includes(searchByName.value.toLowerCase());
+  
+
+  const filterAndSortedList = computed(() => {
+    let filteredList = listPeople.value;
+    const language = selectedLanguage.value;
+
+    if (selectedLanguage.value) {
+      filteredList = filteredList.map((person) => {
+        return {
+          ...person,
+          name: person.name[language],
+          phrase: person.phrase[language]
+        };
       });
     }
 
-    return listPeople.value;
-  });
+    if (searchByName.value) {
+      filteredList = filteredList.filter((name) => {
+        return name?.name.toLowerCase().includes(searchByName.value.toLowerCase());
+      });
+    }
 
-  const sortedData = computed(() => {
     const key = sortingKey.value;
     const order = sortingDirect.value;
-
-    if (order === 'asc') {
-      return filterByName.value
-        .slice()
-        .sort((a, b) => (convertKey(a[key]) > convertKey(b[key]) ? 1 : -1));
-    } else {
-      return filterByName.value
-        .slice()
-        .sort((a, b) => (convertKey(a[key]) < convertKey(b[key]) ? 1 : -1));
+    if (order) {
+      if (order === 'asc') {
+        return filteredList.slice().sort((a, b) => (a[key] > b[key] ? 1 : -1));
+      } else {
+        return filteredList.slice().sort((a, b) => (a[key] < b[key] ? 1 : -1));
+      }
     }
+
+    return filteredList;
   });
-
-  const sortData = () => {
-    if (sortingKey.value) {
-      listPeople.value = sortedData.value;
-    }
-  };
-
-  const convertKey = (key) => {
-    return isNaN(key) ? key.en.split(' ')?.[0] : key;
-  };
 
   const resetSortingAndFiltering = () => {
     searchByName.value = sortingKey.value = sortingDirect.value = '';
@@ -148,6 +154,11 @@
     sortingDirect.value = '';
   };
 
+  const changeLanguage = () => {
+    selectedLanguage.value = selectedLanguage.value === 'en' ? 'ru' : 'en';
+    isLanguage.value = !isLanguage.value;
+  };
+
   const getFetch = async () => {
     try {
       const res = await fetch('./data.json');
@@ -156,7 +167,6 @@
         listPeople.value = data;
         loading.value = false;
       }, 1000);
-    //   setQueryToDownload();
     } catch (e) {
       console.log(e);
     }
@@ -165,11 +175,6 @@
   const changeTab = (tabName) => {
     activeTab.value = tabName;
   };
-
-//   const setQueryToDownload = () => {
-//     const tab = route.query.tab || 'tables';
-//     activeTab.value = tab;
-//   };
 
   watch(activeTab, (newValue) => {
     router.replace({query: {tab: newValue}});
@@ -182,66 +187,4 @@
   onMounted(getFetch);
 </script>
 
-<style lang="scss">
-  .wrapper_sorting_data {
-    display: flex;
-    justify-content: space-between;
-
-    @media only screen and (max-width: 640px) {
-      gap: 10px;
-      flex-direction: column-reverse;
-    }
-  }
-
-  .title {
-    margin-bottom: 8px;
-    font-size: 20px;
-
-    @media only screen and (max-width: 640px) {
-      font-size: 18px;
-    }
-  }
-
-  .sorting_container {
-    width: 70%;
-
-    @media only screen and (max-width: 640px) {
-      width: 100%;
-    }
-  }
-
-  .filter_by_name {
-    width: 25%;
-
-    @media only screen and (max-width: 640px) {
-      width: 50%;
-    }
-  }
-
-  .filter_input {
-    border-radius: 5px;
-    width: 100%;
-    padding: 5px 10px;
-    color: grey;
-  }
-
-  .tab_view {
-    width: 100%;
-  }
-
-  .btn_reset {
-    width: fit-content;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    background: #ea5c58;
-    color: white;
-    transition: all 0.5s ease;
-
-    &:hover {
-      background: #e97874;
-      transform: scale(1.05);
-    }
-  }
-</style>
+<style lang="scss"></style>

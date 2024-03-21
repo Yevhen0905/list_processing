@@ -31,7 +31,7 @@
 
   @media only screen and (max-width: 640px) {
     width: 35px;
-  height: 35px;
+    height: 35px;
   }
 }
 
@@ -44,4 +44,86 @@
   margin: 30px auto;
   text-align: center;
   font-size: 20px;
+}
+
+.wrapper_sorting_data {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 640px) {
+    gap: 10px;
+    flex-direction: column-reverse;
+  }
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 20px;
+
+  @media only screen and (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+.sorting_container {
+  width: 70%;
+
+  @media only screen and (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.filter_by_name {
+  width: 25%;
+
+  @media only screen and (max-width: 640px) {
+    width: 50%;
+  }
+}
+
+.filter_input {
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px 10px;
+  color: grey;
+}
+
+.tab_view {
+  width: 100%;
+}
+
+.wrapper_btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_reset {
+  width: fit-content;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #ea5c58;
+  color: white;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    background: #e74641;
+  }
+}
+
+.btn_language {
+  width: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #58bcea;
+  color: white;
+  transition: all 0.4s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: #3facdf;
+  }
 }
