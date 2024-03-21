@@ -2,19 +2,19 @@
   <div class="container">
     <div class="wrapper_sorting_data">
       <div class="sorting_container">
-        <h3 class="title">Sorting by</h3>
+        <h3 class="title">{{ changeLanguageText(textOnThePage[0].sortingBy) }}</h3>
         <SortingByParams
-          :sorting-buttons="sortingButtons"
+          :sorting-buttons="changeLanguageButtonSorting(sortingButtons)"
           v-model="sortingKey"
           @click="resetDirectionWhenChangeKey"
         />
         <SortingByDirection
-          :sorting-direction="sortingDirection"
+          :sorting-direction="changeLanguageButtonSorting(sortingDirection)"
           v-model="sortingDirect"
         />
       </div>
       <div class="filter_by_name">
-        <h3 class="title">Search by name</h3>
+        <h3 class="title">{{ changeLanguageText(textOnThePage[0].searchByName) }}</h3>
         <input
           class="filter_input"
           v-model="searchByName"
@@ -25,35 +25,37 @@
     </div>
     <div class="wrapper_btn">
       <button class="btn_reset" @click="resetSortingAndFiltering">
-        reset sorting and filtering
+        {{ changeLanguageText(textOnThePage[0].reset) }}
       </button>
       <button class="btn_language" @click="changeLanguage">
-        {{ isLanguage ? 'ru' : 'en' }}
+        {{ isLanguage ? 'ua' : 'en' }}
       </button>
     </div>
     <div class="tab_view">
       <h2 class="title">LIST</h2>
       <SharedTabs :active-tab="activeTab">
         <template #controls class="tab_view_control">
-          <SharedTabControl name="tables" @click="changeTab('tables')"
-            >TABLES</SharedTabControl
-          >
-          <SharedTabControl name="preview" @click="changeTab('preview')"
-            >PREVIEW</SharedTabControl
-          >
+          <SharedTabControl name="tables" @click="changeTab('tables')">
+            {{ changeLanguageText(textOnThePage[0].tables) }}
+          </SharedTabControl>
+          <SharedTabControl name="preview" @click="changeTab('preview')">
+            {{ changeLanguageText(textOnThePage[0].preview) }}
+          </SharedTabControl>
         </template>
 
         <template #default="{activeTab}">
           <Loader class="loader" v-if="loading" />
           <div v-else-if="filterAndSortedList.length">
             <template v-if="activeTab === 'tables'"
-              ><ListTables :list-people="filterAndSortedList"
+              ><ListTables :is-language="isLanguage" :list-people="filterAndSortedList"
             /></template>
             <template v-if="activeTab === 'preview'"
-              ><ListPreview :list-people="filterAndSortedList"
+              ><ListPreview :is-language="isLanguage" :list-people="filterAndSortedList"
             /></template>
           </div>
-          <div v-else class="list_empty">not found</div>
+          <div v-else class="list_empty">
+            {{ changeLanguageText(textOnThePage[0].emptyTables) }}
+          </div>
         </template>
       </SharedTabs>
     </div>
@@ -86,37 +88,80 @@
 
   const sortingButtons = ref([
     {
-      text: 'ID',
+      text: {
+        en: 'ID',
+        ua: 'ID'
+      },
       value: 'id'
     },
     {
-      text: 'Name',
+      text: {
+        en: 'name',
+        ua: 'ФІО'
+      },
       value: 'name'
     },
     {
-      text: 'Age',
+      text: {
+        en: 'Age',
+        ua: 'Вік'
+      },
       value: 'age'
     }
   ]);
 
   const sortingDirection = ref([
     {
-      text: 'ascending order',
+      text: {
+        en: 'ascending order',
+        ua: 'за зростанням'
+      },
       value: 'asc'
     },
     {
-      text: 'descending order',
+      text: {
+        en: 'descending order',
+        ua: 'за спаданням'
+      },
       value: 'desc'
     }
   ]);
 
-  
+  const textOnThePage = ref([
+    {
+      sortingBy: {
+        en: 'Sorting by',
+        ua: 'Сортування за'
+      },
+
+      searchByName: {
+        en: 'Search by name',
+        ua: 'Пошук за назвою'
+      },
+      reset: {
+        en: 'reset sorting and filtering',
+        ua: 'скинути сортування та фільтрацію'
+      },
+      tables: {
+        en: 'TABLES',
+        ua: 'ТАБЛИЦЯ'
+      },
+      preview: {
+        en: 'PREVIEW',
+        ua: "ПРЕВ'Ю"
+      },
+      emptyTables: {
+        en: 'not found',
+        ua: 'не знайдено'
+      }
+    }
+  ]);
 
   const filterAndSortedList = computed(() => {
     let filteredList = listPeople.value;
     const language = selectedLanguage.value;
 
-    if (selectedLanguage.value) {
+    if (language) {
       filteredList = filteredList.map((person) => {
         return {
           ...person,
@@ -145,6 +190,27 @@
     return filteredList;
   });
 
+  const changeLanguageButtonSorting = (arr) => {
+    let filteredArr = arr;
+    const language = selectedLanguage.value;
+
+    if (language) {
+      filteredArr = filteredArr.map((item) => {
+        return {
+          ...item,
+          text: item.text[language]
+        };
+      });
+    }
+
+    return filteredArr;
+  };
+
+  const changeLanguageText = (obj) => {
+    const language = selectedLanguage.value;
+    return obj[language];
+  };
+
   const resetSortingAndFiltering = () => {
     searchByName.value = sortingKey.value = sortingDirect.value = '';
     getFetch();
@@ -155,7 +221,7 @@
   };
 
   const changeLanguage = () => {
-    selectedLanguage.value = selectedLanguage.value === 'en' ? 'ru' : 'en';
+    selectedLanguage.value = selectedLanguage.value === 'en' ? 'ua' : 'en';
     isLanguage.value = !isLanguage.value;
   };
 

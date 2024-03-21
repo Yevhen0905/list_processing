@@ -14,7 +14,7 @@
           {{ people?.name }}
         </div>
       </div>
-      <div class="tables_age">{{ people?.age }} years</div>
+      <div class="tables_age">{{ people?.age }} {{ isLanguage ? 'years' : 'років' }}</div>
       <div class="tables_tel">{{ people?.phone }}</div>
     </div>
   </div>
@@ -27,6 +27,10 @@
     listPeople: {
       type: Object,
       default: () => {}
+    },
+    isLanguage: {
+      type: Boolean,
+      required: true
     }
   });
 

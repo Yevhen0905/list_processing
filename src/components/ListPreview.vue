@@ -33,7 +33,9 @@
           />
         </video>
       </div>
-      <div v-else class="tables_video no_video_available">no video available</div>
+      <div v-else class="tables_video no_video_available">
+        {{ isLanguage ? 'no video available' : 'відео відсутнє' }}
+      </div>
     </div>
   </div>
 </template>
@@ -45,6 +47,10 @@
     listPeople: {
       type: Array,
       default: () => []
+    },
+    isLanguage: {
+      type: Boolean,
+      required: true
     }
   });
 
