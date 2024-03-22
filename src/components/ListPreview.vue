@@ -9,7 +9,7 @@
       <div class="tables_info">
         <div class="tables_initials">
           <div class="tables_img">
-            <img :src="`/list_people/src/assets/img/${people?.image}.svg`" alt="" />
+            <img :src="`src/assets/img/${people?.image}.svg`" alt="" />
           </div>
           <div class="tables_name">{{ people?.name }}</div>
         </div>
@@ -28,7 +28,7 @@
           preload="none"
         >
           <source
-            :src="`/list_people/src/assets/video/${people?.video}.mp4`"
+            :src="`src/assets/video/${people?.video}.mp4`"
             type="video/mp4"
           />
         </video>

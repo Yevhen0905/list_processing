@@ -8,7 +8,7 @@
     >
       <div class="tables_initials">
         <div class="tables_img">
-          <img :src="`/list_people/src/assets/img/${people.image}.svg`" alt="" />
+          <img :src="`src/assets/img/${people.image}.svg`" alt="" />
         </div>
         <div class="tables_name">
           {{ people?.name }}
