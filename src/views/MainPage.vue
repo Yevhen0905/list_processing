@@ -229,7 +229,7 @@
 
   const getFetch = async () => {
     try {
-      const res = await fetch('data.json');
+      const res = await fetch('data/data.json');
       const data = await res.json();
       setTimeout(() => {
         listPeople.value = data;
