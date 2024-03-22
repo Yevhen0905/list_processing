@@ -3,7 +3,7 @@
     <div class="wrapper_sorting_data">
       <div class="sorting_container">
         <h3 class="title">{{ changeLanguageText(textOnThePage[0].sortingBy) }}</h3>
-        <SortingByParams
+        <SortingByKey
           :sorting-buttons="changeLanguageButtonSorting(sortingButtons)"
           v-model="sortingKey"
           @click="resetDirectionWhenChangeKey"
@@ -11,6 +11,7 @@
         <SortingByDirection
           :sorting-direction="changeLanguageButtonSorting(sortingDirection)"
           v-model="sortingDirect"
+          :disabled="!sortingKey"
         />
       </div>
       <div class="filter_by_name">
@@ -27,7 +28,7 @@
       <button class="btn_reset" @click="resetSortingAndFiltering">
         {{ changeLanguageText(textOnThePage[0].reset) }}
       </button>
-      <button class="btn_language" @click="changeLanguage">
+      <button class="btn_language" @click="changeLanguageTables">
         {{ isLanguage ? 'ua' : 'en' }}
       </button>
     </div>
@@ -68,11 +69,11 @@
   import ListPreview from '../components/ListPreview.vue';
   import SharedTabs from '../components/SharedTabs.vue';
   import SharedTabControl from '../components/SharedTabControl.vue';
-  import SortingByParams from '../components/SortingByParams.vue';
+  import SortingByKey from '../components/SortingByKey.vue';
   import SortingByDirection from '../components/SortingByDirection.vue';
 
   import {useRoute, useRouter} from 'vue-router';
-  import {ref, computed, onMounted, watch, onBeforeMount} from 'vue';
+  import {ref, computed, onMounted, watch, watchEffect, onBeforeMount} from 'vue';
 
   const route = useRoute();
   const router = useRouter();
@@ -80,8 +81,8 @@
   const loading = ref(true);
   const searchByName = ref('');
   const listPeople = ref([]);
-  const sortingKey = ref('');
-  const sortingDirect = ref('');
+  const sortingKey = ref(route.query.key || '');
+  const sortingDirect = ref(route.query.order || '');
   const selectedLanguage = ref('en');
   const isLanguage = ref(true);
   const activeTab = ref(route.query.tab || 'tables');
@@ -179,6 +180,7 @@
 
     const key = sortingKey.value;
     const order = sortingDirect.value;
+    console.log(sortingKey.value);
     if (order) {
       if (order === 'asc') {
         return filteredList.slice().sort((a, b) => (a[key] > b[key] ? 1 : -1));
@@ -211,6 +213,11 @@
     return obj[language];
   };
 
+  const changeLanguageTables = () => {
+    selectedLanguage.value = selectedLanguage.value === 'en' ? 'ua' : 'en';
+    isLanguage.value = !isLanguage.value;
+  };
+
   const resetSortingAndFiltering = () => {
     searchByName.value = sortingKey.value = sortingDirect.value = '';
     getFetch();
@@ -218,11 +225,6 @@
 
   const resetDirectionWhenChangeKey = () => {
     sortingDirect.value = '';
-  };
-
-  const changeLanguage = () => {
-    selectedLanguage.value = selectedLanguage.value === 'en' ? 'ua' : 'en';
-    isLanguage.value = !isLanguage.value;
   };
 
   const getFetch = async () => {
@@ -242,12 +244,21 @@
     activeTab.value = tabName;
   };
 
-  watch(activeTab, (newValue) => {
-    router.replace({query: {tab: newValue}});
+  const queryParams = computed(() => {
+    const tab = activeTab.value;
+    const key = sortingKey.value;
+    const order = sortingDirect.value;
+
+    return {
+      ...route.query,
+      tab: tab !== '' ? tab : undefined,
+      key: key !== '' ? key : undefined,
+      order: order !== '' ? order : undefined
+    };
   });
 
-  onBeforeMount(() => {
-    router.replace({query: {tab: activeTab.value}});
+  watchEffect(() => {
+    router.replace({query: queryParams.value});
   });
 
   onMounted(getFetch);

@@ -140,6 +140,19 @@
     transform: translate(0px, 3rem);
     transition: all 1s ease-in-out;
     background: #fff;
+
+    @media only screen and (max-width: 840px) {
+      height: 270px;
+    }
+
+    @media only screen and (max-width: 640px) {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: 560px) {
+      flex-direction: column;
+      height: fit-content;
+    }
   }
 
   .visible {
@@ -153,6 +166,10 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    @media only screen and (max-width: 560px) {
+      width: 100%;
+    }
   }
 
   .tables_description {
@@ -163,6 +180,13 @@
     width: 50%;
     height: 100%;
     box-shadow: -4px 2px 6px rgba(0, 0, 0, 0.2);
+    border-left: 1px solid #8080806e;
+
+    @media only screen and (max-width: 560px) {
+      width: 100%;
+      min-height: 50px;
+      border-top: 1px solid #8080806e;
+    }
   }
 
   .no_video_available {

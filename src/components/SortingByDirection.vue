@@ -6,6 +6,7 @@
       :key="direct.value"
       :class="buttonsActive(direct.value)"
       @click="activateSorting(direct.value)"
+      :disabled="disabled"
     >
       {{ direct.text }}
     </button>
@@ -23,6 +24,10 @@
     modelValue: {
       type: String,
       default: ''
+    },
+    disabled: {
+      type: Boolean,
+      default: 'true'
     }
   });
 
@@ -67,8 +72,15 @@
     background: #fff;
 
     &:hover {
-      background-color: rgba(69, 181, 235, 0.81);
+      background: rgba(69, 181, 235, 0.81);
       color: #fff;
+    }
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      background: #fff;
+      color: grey;
     }
   }
 
