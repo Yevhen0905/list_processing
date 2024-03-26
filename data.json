@@ -1,0 +1,2115 @@
+[
+  {
+    "id": 0,
+    "age": 30,
+    "phone": "(369) 432-9206",
+    "image": "sheep",
+    "name": {
+      "en": "Gilbert Morton",
+      "ua": "Гілберт Мортон"
+    },
+    "phrase": {
+      "en": "Japman somam mes lizmasapa om zefopi ki wa ogju mofrajnir denba uc famoso opeipu woul.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "shoe"
+  },
+  {
+    "id": 1,
+    "age": 57,
+    "phone": "(415) 670-6901",
+    "image": "pig",
+    "name": {
+      "en": "Jeffery Davidson",
+      "ua": "Джеффрі Девідсон"
+    },
+    "phrase": {
+      "en": "Lejtefup boc hi ricge tela mo ragdi vutomeh kuhup veosubu pe ceso juhzustum ipagagcub fu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 2,
+    "age": 30,
+    "phone": "(635) 873-1879",
+    "image": "cat",
+    "name": {
+      "en": "Lela Clark",
+      "ua": "Лела Кларк"
+    },
+    "phrase": {
+      "en": "Bup dod elavor etudorkaw bapibune peijbur biot cuskoruc no liwudua osi lazob zu rij buduhkaf.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "boy"
+  },
+  {
+    "id": 3,
+    "age": 21,
+    "phone": "(559) 294-5266",
+    "image": "owl",
+    "name": {
+      "en": "Stella McGee",
+      "ua": "Стелла Макгі"
+    },
+    "phrase": {
+      "en": "Futones izzoz faohi kakicu cagujku picte jorof lis wej de tuj pop caj mivagaaju hilol.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 4,
+    "age": 29,
+    "phone": "(309) 825-7853",
+    "image": "lion",
+    "name": {
+      "en": "Myra Leonard",
+      "ua": "Майра Леонард"
+    },
+    "phrase": {
+      "en": "Eloenu bac hodoga wi wumo vi puvu pi run zaj um vu idhishuw aguj fiffa.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 5,
+    "age": 24,
+    "phone": "(982) 642-8289",
+    "image": "lion",
+    "name": {
+      "en": "Robert Robbins",
+      "ua": "Роберт Роббінс"
+    },
+    "phrase": {
+      "en": "Hifud wuvtugca alaedjo vaninre pubab vihviku bitodfe siwmalvo jilucu radfud lecoh fu ivetoljod ja inupowci.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "boy"
+  },
+  {
+    "id": 6,
+    "age": 63,
+    "phone": "(539) 538-4286",
+    "image": "lion",
+    "name": {
+      "en": "Sarah Hale",
+      "ua": "Сара Хейл"
+    },
+    "phrase": {
+      "en": "It ocutuleb ni vucagewe nawawazo rejruj fut sipbusor onesu od focifu wuwmemure so ikujakum rabuvad.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 7,
+    "age": 25,
+    "phone": "(774) 819-5324",
+    "image": "koala",
+    "name": {
+      "en": "Clarence Osborne",
+      "ua": "Кларенс Осборна"
+    },
+    "phrase": {
+      "en": "Tagek rovu ab ringo mososako jatoltu gawhapoj witmu vud idetu ejirub ohacusrip zif cupguj pun.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 8,
+    "age": 61,
+    "phone": "(814) 723-9205",
+    "image": "koala",
+    "name": {
+      "en": "Jonathan West",
+      "ua": "Джонатан Уест"
+    },
+    "phrase": {
+      "en": "Ap fo omoki lupi pecfup cahjages pabvazlu sakice offubnur afuhak be cih ce ros visaafu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "boy"
+  },
+  {
+    "id": 9,
+    "age": 33,
+    "phone": "(532) 993-4726",
+    "image": "penguin",
+    "name": {
+      "en": "Jim Steele",
+      "ua": "Джім Стіл"
+    },
+    "phrase": {
+      "en": "Sawidub sor re ziw bu migmemul odwa coc jeunaatu lejdad baofug imbagak vuhise udi uz.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 10,
+    "age": 46,
+    "phone": "(412) 429-3657",
+    "image": "cat",
+    "name": {
+      "en": "Ricardo Ramsey",
+      "ua": "Рікардо Ремсі"
+    },
+    "phrase": {
+      "en": "Bupuzko pel nijaj fo pi zerlezacu liv zic fehcuhir varsona suze pobvotno dof tef wuwila.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 11,
+    "age": 31,
+    "phone": "(786) 719-9448",
+    "image": "owl",
+    "name": {
+      "en": "Margaret Morales",
+      "ua": "Маргарет Моралес"
+    },
+    "phrase": {
+      "en": "Wubovcab ziakase tefubsup pat naltufwar viwde zu dodkew cufo vezwa irvazza wudibnaw vivjoav vub cevekib.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 12,
+    "age": 52,
+    "phone": "(762) 984-9699",
+    "image": "raccoon",
+    "name": {
+      "en": "Violet Keller",
+      "ua": "Віолетта Келлер"
+    },
+    "phrase": {
+      "en": "Mavujuz wa derhu ka kedob uz bubedgo zo mod ritbamaw ma kovupset wo buguszu bon.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 13,
+    "age": 60,
+    "phone": "(553) 993-1955",
+    "image": "cat",
+    "name": {
+      "en": "Elva Hammond",
+      "ua": "Елва Хаммонд"
+    },
+    "phrase": {
+      "en": "Okufatzi awig nur ruhsehtu nokfapgu ozdi kurrog zu kufgak nijrokguw dazsilu gen fuauzi upnud nu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 14,
+    "age": 57,
+    "phone": "(865) 701-5424",
+    "image": "cat",
+    "name": {
+      "en": "Troy Greene",
+      "ua": "Трой Грін"
+    },
+    "phrase": {
+      "en": "Zi he ije jizi wabheuv toho su cas tutler go diboc lesita giruran ko wulod.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 15,
+    "age": 46,
+    "phone": "(905) 363-1072",
+    "image": "sheep",
+    "name": {
+      "en": "Andre Roberson",
+      "ua": "Андре Роберсон"
+    },
+    "phrase": {
+      "en": "Nu vualnif wi nez monasdu nirej hegjupud fuli ceotak ad wokog par inesedni vod ezmoh.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 16,
+    "age": 41,
+    "phone": "(550) 863-6828",
+    "image": "koala",
+    "name": {
+      "en": "Martha Wright",
+      "ua": "Марта Райт"
+    },
+    "phrase": {
+      "en": "Su ekuhuf zoh bofrir efena taavitiv husfuzep tat pabawih riobu ad oda iksibbup vojlo ta.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 17,
+    "age": 21,
+    "phone": "(825) 527-8107",
+    "image": "raccoon",
+    "name": {
+      "en": "Eddie Wong",
+      "ua": "Эдді Вонг"
+    },
+    "phrase": {
+      "en": "Zosaj sacmil peh zag aferocoz pesbon pepkekjuc ucuauemo wejze ta awomi vemoza kipi nevpumker ose.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 18,
+    "age": 56,
+    "phone": "(250) 953-5462",
+    "image": "sheep",
+    "name": {
+      "en": "Kathryn Jensen",
+      "ua": "Кетрін Дженсен"
+    },
+    "phrase": {
+      "en": "Coga sumani fujnod irufubove pew ohvesga he zes zovsunzol hec corok afged vaignad ge fovoh.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 19,
+    "age": 45,
+    "phone": "(711) 380-3695",
+    "image": "raccoon",
+    "name": {
+      "en": "Craig Bowers",
+      "ua": "Крейг Бауерс"
+    },
+    "phrase": {
+      "en": "Izomudcer rivcor vu dovdag ah goipipis fonrifmag faneko cav togvelnum ci sa la wechi sep.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 20,
+    "age": 59,
+    "phone": "(759) 285-4366",
+    "image": "lion",
+    "name": {
+      "en": "William Haynes",
+      "ua": "Уіл'ям Хейнс"
+    },
+    "phrase": {
+      "en": "Rojhu za siwim do ocuse adegiznup jav lileupu zof ehvude ugearaug jamsa purkesi ambulono ri.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 21,
+    "age": 51,
+    "phone": "(954) 359-3275",
+    "image": "pig",
+    "name": {
+      "en": "Brent Jimenez",
+      "ua": "Брент Хіменес"
+    },
+    "phrase": {
+      "en": "Na jova jetrug ceagnip vumfa eznu vu oguza hi goc ibov fewujvam jotsivof kipkuj nejig.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 22,
+    "age": 28,
+    "phone": "(523) 915-2404",
+    "image": "lion",
+    "name": {
+      "en": "Vera Barton",
+      "ua": "Вера Бартон"
+    },
+    "phrase": {
+      "en": "Ana nocmuz er gigduaref idenuw fuzkim ha wopja zisuca usuao vu solged hadlawip wahur zis.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 23,
+    "age": 21,
+    "phone": "(626) 582-4867",
+    "image": "sheep",
+    "name": {
+      "en": "Keith Hodges",
+      "ua": "Кейт Ходжес"
+    },
+    "phrase": {
+      "en": "Tipcati nenu vud jocna napmifjes kozpem iwuhu tod can pibodce mapiopi erojobow iteape jov kemake.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 24,
+    "age": 61,
+    "phone": "(453) 731-2450",
+    "image": "koala",
+    "name": {
+      "en": "Jeffery Dean",
+      "ua": "Джеффрі Дін"
+    },
+    "phrase": {
+      "en": "Bepsecgeb rogo fuaozca godieme nuvuf evcumwok it owkom bofidep get zice sigepfu tibipow iw ago.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 25,
+    "age": 41,
+    "phone": "(828) 337-3027",
+    "image": "penguin",
+    "name": {
+      "en": "Adelaide Terry",
+      "ua": "Аделаіда Террі"
+    },
+    "phrase": {
+      "en": "Uhoracet niuw hu ca nugu eridu gif pogmimeh winavte zefnu nef zog pewko it aggih.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 26,
+    "age": 40,
+    "phone": "(834) 435-3939",
+    "image": "pig",
+    "name": {
+      "en": "Dennis Watts",
+      "ua": "Дэнніс Вт"
+    },
+    "phrase": {
+      "en": "Cetgu ofomocha gaj zah egiwignor re nimbot folceoho ropua begzo fiwakfu wefezcuz lavvi emivoz givsuc.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 27,
+    "age": 43,
+    "phone": "(970) 756-9973",
+    "image": "dog",
+    "name": {
+      "en": "Jackson Medina",
+      "ua": "Джексон-Медіна"
+    },
+    "phrase": {
+      "en": "Kovaw ov misnongim cotemose tidab ga oduim sohje memhetut kusev napopjoz wanasat we tonigu muvuara.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 28,
+    "age": 23,
+    "phone": "(525) 777-4615",
+    "image": "penguin",
+    "name": {
+      "en": "Addie Benson",
+      "ua": "Адді Бенсон"
+    },
+    "phrase": {
+      "en": "Mobovke so huabel sarfotwar dedruafu nuj aziupe kijopu ikiugo de haj toifibuz wezir utawos nummeud.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 29,
+    "age": 56,
+    "phone": "(477) 360-2947",
+    "image": "raccoon",
+    "name": {
+      "en": "Nell Burgess",
+      "ua": "Нелл Берджесс"
+    },
+    "phrase": {
+      "en": "Agsu omojaki zik gaom eneti sipoun soh kamin juhbe ha ihma ajjep mawko unadivheb si.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 30,
+    "age": 53,
+    "phone": "(514) 208-9171",
+    "image": "cat",
+    "name": {
+      "en": "Harold Christensen",
+      "ua": "Харольд Крістенсен"
+    },
+    "phrase": {
+      "en": "Legu de repefbiz jojsipo dotki geggufed gag pol cev ved wehbaage ofa larraub lielawa pohhav.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 31,
+    "age": 33,
+    "phone": "(872) 926-3138",
+    "image": "sheep",
+    "name": {
+      "en": "Blake Lloyd",
+      "ua": "Блейк Ллойд"
+    },
+    "phrase": {
+      "en": "Lic ruwgav louhene dofup fepawvi tawes ejta depsoc famduv hil hurol jat puv wuela mac.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 32,
+    "age": 36,
+    "phone": "(849) 622-4632",
+    "image": "raccoon",
+    "name": {
+      "en": "Sam Sherman",
+      "ua": "Сем Шерман"
+    },
+    "phrase": {
+      "en": "Jig woed ehegurun ase dos onumef tolseced hifeji itilupfer ke ka hihidek kuh udabase ciclogob.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 33,
+    "age": 28,
+    "phone": "(454) 317-9416",
+    "image": "fox",
+    "name": {
+      "en": "Jay Reed",
+      "ua": "Джей Рід"
+    },
+    "phrase": {
+      "en": "Du objogop hoz buhdog cusuzav haj pazomaar hupu ke pefo ajivemam la ane avoih dam.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 34,
+    "age": 38,
+    "phone": "(435) 726-2939",
+    "image": "cat",
+    "name": {
+      "en": "Katharine Bishop",
+      "ua": "Кетрін Бишоп"
+    },
+    "phrase": {
+      "en": "Usehe acahepi kideg jakdofiz wuloh pumda acza ram en dahohor zubuja tujesab cu udo javujfo.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 35,
+    "age": 22,
+    "phone": "(580) 339-8134",
+    "image": "cat",
+    "name": {
+      "en": "Lenora Haynes",
+      "ua": "Ленора Хейнс"
+    },
+    "phrase": {
+      "en": "Vi teruh icofekviv kep ovoceg vo nas afavueta ehmeawi jomun rolon deazna mut del usevanej.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 36,
+    "age": 35,
+    "phone": "(832) 423-1059",
+    "image": "owl",
+    "name": {
+      "en": "Mark Meyer",
+      "ua": "Марк Мейер"
+    },
+    "phrase": {
+      "en": "Va nuaice sezot sewnabit notabus ete golnaflez reis amaageri do afsu evu emfoow fik hurup.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 37,
+    "age": 54,
+    "phone": "(818) 828-2985",
+    "image": "koala",
+    "name": {
+      "en": "Steven Doyle",
+      "ua": "Стівен Дойл"
+    },
+    "phrase": {
+      "en": "Pe bekhafluj dawto cuadi hubavuj buzsiaza dajzowhez epelenom kepuj po opiuhe fofnotu sa tode sujal.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 38,
+    "age": 63,
+    "phone": "(631) 944-9827",
+    "image": "cat",
+    "name": {
+      "en": "Mina Ellis",
+      "ua": "Міна Элліс"
+    },
+    "phrase": {
+      "en": "Nodoz abuowe izvotde diel gicizvo leh helikin la er ollat mibnopi us pad jer tecuwco.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 39,
+    "age": 41,
+    "phone": "(772) 544-3987",
+    "image": "raccoon",
+    "name": {
+      "en": "Mike Conner",
+      "ua": "Майк Коннер"
+    },
+    "phrase": {
+      "en": "Bam gomden lenugsu hiofe gunogner kimmudo mofjohi aciweluv zim lepa gut ecuna bazvecmo hacmeowe ori.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 40,
+    "age": 40,
+    "phone": "(986) 708-4579",
+    "image": "pig",
+    "name": {
+      "en": "Helen Hayes",
+      "ua": "Хелен Хейес"
+    },
+    "phrase": {
+      "en": "Irpu zubke bug fa fet eva rolot udu ho uzecore usbu foteiki ijuane jokebup nuval.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 41,
+    "age": 18,
+    "phone": "(419) 249-7160",
+    "image": "dog",
+    "name": {
+      "en": "Willie Day",
+      "ua": "Уіллі День"
+    },
+    "phrase": {
+      "en": "Miawuri oja uh ifonbo nize zun sabnandid so guz ahre mag ra apioho hirbum wabo.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 42,
+    "age": 18,
+    "phone": "(914) 557-9763",
+    "image": "owl",
+    "name": {
+      "en": "Polly Holmes",
+      "ua": "Поллі Холмс"
+    },
+    "phrase": {
+      "en": "Demalip fazdu cazdognid vicigru awilaj rosuw zof megpa namuahir kekaso ihicugbuc gawafta ma rufakwed georidep.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 43,
+    "age": 18,
+    "phone": "(969) 329-8765",
+    "image": "pig",
+    "name": {
+      "en": "Russell Morgan",
+      "ua": "Расселл Морган"
+    },
+    "phrase": {
+      "en": "Oline botbecvi naec rovsijafe afgelur lawlu wut waf di led kefogbu bami usoabapo avferfi gofjev.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 44,
+    "age": 64,
+    "phone": "(585) 534-6939",
+    "image": "penguin",
+    "name": {
+      "en": "Angel Richardson",
+      "ua": "Ангел Ріардсон"
+    },
+    "phrase": {
+      "en": "Iwutunes ja sezloc je disneici noga pofdan motcivul pu pow hokezad lu da inuok uve.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 45,
+    "age": 30,
+    "phone": "(708) 322-5015",
+    "image": "penguin",
+    "name": {
+      "en": "Grace Obrien",
+      "ua": "Грейс Обрайен"
+    },
+    "phrase": {
+      "en": "Mani kurabelo baop enbuzwin sacerfec ju op lonen pe datawe les lezja kojuc niblipce bed.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 46,
+    "age": 60,
+    "phone": "(832) 919-5086",
+    "image": "penguin",
+    "name": {
+      "en": "Lily Barton",
+      "ua": "Лілі Бартон"
+    },
+    "phrase": {
+      "en": "Hifan ufupohre ehtufise es kew hopur guwrol ejjerga vokpoelo bu ecacunce coelioc upitig ashojod perpovon.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 47,
+    "age": 64,
+    "phone": "(812) 920-8226",
+    "image": "koala",
+    "name": {
+      "en": "Ernest Keller",
+      "ua": "Ернест Келлер"
+    },
+    "phrase": {
+      "en": "Lesilimeg jisbittaj vahanbu luvud fozuc ahaj dahadlu iv ollumin ecu suamem ro lili fezwez bo.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 48,
+    "age": 53,
+    "phone": "(917) 976-3953",
+    "image": "lion",
+    "name": {
+      "en": "Andre Nunez",
+      "ua": "Андре Нунес"
+    },
+    "phrase": {
+      "en": "We enfeble du woti egakos lutan ekvep lalet tapliwmu ziwgav ho owij fa welhoj ogu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 49,
+    "age": 38,
+    "phone": "(935) 516-2888",
+    "image": "penguin",
+    "name": {
+      "en": "Ernest Cain",
+      "ua": "Ернест Каин"
+    },
+    "phrase": {
+      "en": "Zewe gifizob wig gufib nenre rici wanzet ahruj eribo danebru suwofib tusej igma zagdof an.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 50,
+    "age": 61,
+    "phone": "(272) 363-2232",
+    "image": "pig",
+    "name": {
+      "en": "Jeffery Kelley",
+      "ua": "Джеффрі Келлі"
+    },
+    "phrase": {
+      "en": "Zor mekjipnim tutep diro ekcej tibogah tiwobed hupka opge pon su suab naguravi sajok tib.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 51,
+    "age": 62,
+    "phone": "(820) 692-6846",
+    "image": "sheep",
+    "name": {
+      "en": "Sylvia Jennings",
+      "ua": "Сільвія Дженнінгс"
+    },
+    "phrase": {
+      "en": "Fa wud vo vavogpe zej onefale wuv ta ta asfuido wekere kodate tepulhin inu zinrabuw.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 52,
+    "age": 64,
+    "phone": "(417) 965-5264",
+    "image": "sheep",
+    "name": {
+      "en": "Polly Watts",
+      "ua": "Поллі Вт"
+    },
+    "phrase": {
+      "en": "uaeuda lu da ob rupnivur genufoc egbefig to cenizvu wokoj awufe ful liapuro wut gi.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 53,
+    "age": 34,
+    "phone": "(521) 912-5976",
+    "image": "koala",
+    "name": {
+      "en": "Louise Lawson",
+      "ua": "Луіз Лоусон"
+    },
+    "phrase": {
+      "en": "Jog bujit wobruwzij imoruwi murum new got zohar tuvilvor rek pul galro deztov re we.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 54,
+    "age": 25,
+    "phone": "(447) 414-2930",
+    "image": "lion",
+    "name": {
+      "en": "Jon Yates",
+      "ua": "Джон Йейтс"
+    },
+    "phrase": {
+      "en": "Jojne keami peg wipaj fok laotki le ralmucfu ta dodvaftup tucavup hownezir elifo wuzba ko.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 55,
+    "age": 46,
+    "phone": "(824) 676-9731",
+    "image": "owl",
+    "name": {
+      "en": "Gertrude Medina",
+      "ua": "Гертруда Медіна"
+    },
+    "phrase": {
+      "en": "Wu akeujbi bejte rizehi lu cum ijuwoom comok zunua pimdopitu becak voj ede lirvaho neszalpe.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 56,
+    "age": 28,
+    "phone": "(886) 430-7695",
+    "image": "pig",
+    "name": {
+      "en": "Susie Parker",
+      "ua": "Сюзі Паркер"
+    },
+    "phrase": {
+      "en": "We uzoow azfovob zuwoevo ujearras gisbejwa pu pita ban jorzoze kehesi legi do ti kavmihmaf.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 57,
+    "age": 61,
+    "phone": "(704) 730-2097",
+    "image": "pig",
+    "name": {
+      "en": "Matthew Bishop",
+      "ua": "Мет'ю Бишоп"
+    },
+    "phrase": {
+      "en": "Bo kubwesu er uhci keg urbispag nitca uf enmav ite natheheb verem omugacbus hatiz epme.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 58,
+    "age": 31,
+    "phone": "(655) 780-8813",
+    "image": "sheep",
+    "name": {
+      "en": "Clara Fleming",
+      "ua": "Клара Флемінг"
+    },
+    "phrase": {
+      "en": "Vublunpot lohuvma sikud kev mirogo kiikocif juuso da pum gucguuau vevcozi dichahzed lecvifak ebiurcub erle.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 59,
+    "age": 47,
+    "phone": "(568) 887-5029",
+    "image": "penguin",
+    "name": {
+      "en": "Calvin West",
+      "ua": "Келвін Запад"
+    },
+    "phrase": {
+      "en": "Epicaw nolihbu husnah fifovine nupuauai inmil jo va poz oli ce kamla fajaho litup zebcemuau.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 60,
+    "age": 31,
+    "phone": "(514) 882-2203",
+    "image": "dog",
+    "name": {
+      "en": "Hester Conner",
+      "ua": "Хестер Коннер"
+    },
+    "phrase": {
+      "en": "Vebajbu sowkoj pipuh mibi pag kaliwki japa nogagtez buepa ihopo fihioj deseh vud cagho pe.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 61,
+    "age": 48,
+    "phone": "(725) 680-3064",
+    "image": "sheep",
+    "name": {
+      "en": "Minerva Chavez",
+      "ua": "Мінерва Чавеса"
+    },
+    "phrase": {
+      "en": "Hijo seav tel uvfi wa murake noc ri amipiv sobeh ho zohec lezob kuvne lorzi.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 62,
+    "age": 33,
+    "phone": "(773) 935-9549",
+    "image": "fox",
+    "name": {
+      "en": "Marie Alvarez",
+      "ua": "Марі Альварез"
+    },
+    "phrase": {
+      "en": "Mevdaniw ge haesice duaicreh meja gume li aj bawuci getak pis te fisi borezhu hu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 63,
+    "age": 29,
+    "phone": "(251) 437-9183",
+    "image": "fox",
+    "name": {
+      "en": "Trevor Thomas",
+      "ua": "Тревор Томас"
+    },
+    "phrase": {
+      "en": "Ila mop gatde pojuru gerjemfob jumaz loofru gawe du adu da fegmidvel go debwafo afvi.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 64,
+    "age": 20,
+    "phone": "(809) 835-8411",
+    "image": "owl",
+    "name": {
+      "en": "Jennie Warren",
+      "ua": "Дженні Уоррен"
+    },
+    "phrase": {
+      "en": "Aboah du senabzi iwgoom to pet silkua admat mi fava jacinlur cuvezmo zi beiweloh zi.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 65,
+    "age": 27,
+    "phone": "(347) 838-7005",
+    "image": "lion",
+    "name": {
+      "en": "Christian Nguyen",
+      "ua": "Крістіан Нгуен"
+    },
+    "phrase": {
+      "en": "Rugbita refu ihzooz wohivta mueza dobo pujfubdu arriwi pugoif adediipu wivca hugo feluta ranu fadutbua.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 66,
+    "age": 29,
+    "phone": "(618) 822-4134",
+    "image": "koala",
+    "name": {
+      "en": "Mitchell Fletcher",
+      "ua": "Мітчел Флетчер"
+    },
+    "phrase": {
+      "en": "Watepez cahodpo japul badon cuapecu efeice vapohave devosud uzsac paset wubi murni av cedno le.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 67,
+    "age": 21,
+    "phone": "(427) 293-3834",
+    "image": "dog",
+    "name": {
+      "en": "Alex Singleton",
+      "ua": "Алекс Сінглтон"
+    },
+    "phrase": {
+      "en": "Dec nuivo dizecemo anpeafu togse ja mivmua teha wov sicocho pocjiwu leuga ab re fad.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 68,
+    "age": 35,
+    "phone": "(249) 926-1313",
+    "image": "raccoon",
+    "name": {
+      "en": "Kyle Little",
+      "ua": "Кайл Немного"
+    },
+    "phrase": {
+      "en": "Eki tosojfe rali vit obmid ceus ej mud orerub oneb epeuvoere me nar goim tobhuwmu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 69,
+    "age": 31,
+    "phone": "(881) 939-3910",
+    "image": "fox",
+    "name": {
+      "en": "Ada Chapman",
+      "ua": "Ади Чапман"
+    },
+    "phrase": {
+      "en": "Ruzucfuc vunigul ommav isvejjoh nioboob cahvolcah werjuz hakzumho tiwane damvode lu ata mi herabek mir.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 70,
+    "age": 28,
+    "phone": "(308) 229-9801",
+    "image": "fox",
+    "name": {
+      "en": "Rose Robinson",
+      "ua": "Роза Робінзон"
+    },
+    "phrase": {
+      "en": "Vapi wi nav dibe manwa wonmur guwes bogpu wibi gafowaum viule po gaj mecpocuc tu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 71,
+    "age": 21,
+    "phone": "(652) 774-6810",
+    "image": "dog",
+    "name": {
+      "en": "Tommy Glover",
+      "ua": "Томмі Гловер"
+    },
+    "phrase": {
+      "en": "Kej zejdagza povka werak ozomwe moffumdib nahnoal idojevuwe taha gagjina nuvanbua vogemca rok fa moka.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 72,
+    "age": 48,
+    "phone": "(730) 487-8846",
+    "image": "cat",
+    "name": {
+      "en": "Anne Ortiz",
+      "ua": "Анне Ортіс"
+    },
+    "phrase": {
+      "en": "Za wumra zepinim ficop ezivisbi goz dopuw si hi gu je acoozgaj logkeb bed duz.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 73,
+    "age": 29,
+    "phone": "(830) 599-7350",
+    "image": "raccoon",
+    "name": {
+      "en": "Timothy Wells",
+      "ua": "Тімоті Уеллс"
+    },
+    "phrase": {
+      "en": "Ebuve giw sawdo ame jafuzuc osdep acuowwen soup tuhija uhawi muc uzku pej uh ez.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 74,
+    "age": 52,
+    "phone": "(734) 451-4374",
+    "image": "lion",
+    "name": {
+      "en": "Theresa Barber",
+      "ua": "Тереза Парікмахерская"
+    },
+    "phrase": {
+      "en": "Jojjeefi cog bif migeapi hu toub jolniz ut tod dutkiwi do za li bog pes.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 75,
+    "age": 61,
+    "phone": "(430) 661-4936",
+    "image": "fox",
+    "name": {
+      "en": "Jeffrey Ramsey",
+      "ua": "Джеффрі Рамсей"
+    },
+    "phrase": {
+      "en": "Ru uffob rumfa gasnutib gurlu adevuf bi iviwate wipalu du ho rebisgin aparijga cab mid.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 76,
+    "age": 51,
+    "phone": "(379) 656-7957",
+    "image": "raccoon",
+    "name": {
+      "en": "Lucinda Bailey",
+      "ua": "Люсінда Бейлі"
+    },
+    "phrase": {
+      "en": "Eje ijobof lafjid ne vavuj tij bo boeweci wiltizno coduhbo dat somefo cicomgar aba kuavissa.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 77,
+    "age": 53,
+    "phone": "(767) 911-8045",
+    "image": "sheep",
+    "name": {
+      "en": "Todd Santiago",
+      "ua": "Тодд Сант'яго"
+    },
+    "phrase": {
+      "en": "Iricuhes kimo soh odi tic gobpuzwav amhon izmenma kasok rasanotu eseenfaw ocawej naw ov etha.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 78,
+    "age": 36,
+    "phone": "(215) 947-3647",
+    "image": "koala",
+    "name": {
+      "en": "Ina Harper",
+      "ua": "Іна Харпер"
+    },
+    "phrase": {
+      "en": "Neidi ke toltug tu ketoga dehi un ludosda jic natzevo git di go wira dom.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 79,
+    "age": 65,
+    "phone": "(941) 664-7662",
+    "image": "raccoon",
+    "name": {
+      "en": "Lucile Cox",
+      "ua": "Люсіль Кокс"
+    },
+    "phrase": {
+      "en": "Nutejeh fisjugi zip suwmijeca cajmaskut ve jildec ahsinha hizraefu pojihdam an ajsa muv voetbul pe.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 80,
+    "age": 42,
+    "phone": "(381) 947-9759",
+    "image": "cat",
+    "name": {
+      "en": "Matthew Bishop",
+      "ua": "Мэт'ю Бішоп"
+    },
+    "phrase": {
+      "en": "Ehagewub vapdip wujaf uaebavo ji wovmolci et tuameeke idmumik idohazo to ov hopa bu habad.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 81,
+    "age": 35,
+    "phone": "(500) 295-6932",
+    "image": "raccoon",
+    "name": {
+      "en": "Lora Ellis",
+      "ua": "Лора Элліс"
+    },
+    "phrase": {
+      "en": "Sudek bifos misi tiz baesmod ruod pog tompak makubdu duwonpif wa cocwive ji jir ac.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 82,
+    "age": 37,
+    "phone": "(724) 282-8502",
+    "image": "raccoon",
+    "name": {
+      "en": "Cory Wade",
+      "ua": "Корі Уейд"
+    },
+    "phrase": {
+      "en": "Pas ejopid acbucel muzahnat in epialkoh jite zec ima jowzewho hoel di vurcoj es wofo.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 83,
+    "age": 21,
+    "phone": "(950) 516-9016",
+    "image": "koala",
+    "name": {
+      "en": "Gene Phillips",
+      "ua": "Джин Філліпс"
+    },
+    "phrase": {
+      "en": "Kewru disizlu nic mu na tapiik adu ibozahu vaigo gasi pihfotu zalnutu iri hogiz sogoh.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 84,
+    "age": 65,
+    "phone": "(373) 654-3581",
+    "image": "cat",
+    "name": {
+      "en": "Randall Powell",
+      "ua": "Рендал Пауелл"
+    },
+    "phrase": {
+      "en": "Zazisliv cikmegzuf vuhtub ep tih ja ev raditif bu rit riwen vegge oggin gom pa.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 85,
+    "age": 53,
+    "phone": "(652) 371-8376",
+    "image": "owl",
+    "name": {
+      "en": "Clyde Castro",
+      "ua": "Клайд Кастро"
+    },
+    "phrase": {
+      "en": "Wiguswe tofipzat usa kupma roz isatli sowup dujo menpihoza rafitil zitmo toreher alihovas veh gipa.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 86,
+    "age": 28,
+    "phone": "(288) 241-2991",
+    "image": "fox",
+    "name": {
+      "en": "Rebecca Barker",
+      "ua": "Ребекка Баркер"
+    },
+    "phrase": {
+      "en": "Bipekcit selo uburodic owhav ta oputezdag pozuj kabuev dovpocip nikderdo vo hat rizvemvu nuaoji fadsop.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 87,
+    "age": 51,
+    "phone": "(644) 625-8234",
+    "image": "fox",
+    "name": {
+      "en": "Nell Glover",
+      "ua": "Нелл Гловер"
+    },
+    "phrase": {
+      "en": "Anvupjir enew helno dekwieg fo biwiw ubo pa elo la jidris caow ir ahmiki je.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 88,
+    "age": 40,
+    "phone": "(909) 609-2367",
+    "image": "koala",
+    "name": {
+      "en": "Andre McLaughlin",
+      "ua": "Андре Маклафлін"
+    },
+    "phrase": {
+      "en": "Hinbe ozdir maoweof rem banta undil utazedefu bitzuzag maruhpab ta voftic hiogfi on gazcuveli civona.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 89,
+    "age": 32,
+    "phone": "(338) 295-4362",
+    "image": "owl",
+    "name": {
+      "en": "Lula Ortiz",
+      "ua": "Люля Ортіс"
+    },
+    "phrase": {
+      "en": "Ri use vabusa nuchu mun jojaheg osap awole tafvu junizpa pacemkov pertaupa hijsouv joego jit.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "shoe"
+  },
+  {
+    "id": 90,
+    "age": 62,
+    "phone": "(347) 610-1905",
+    "image": "raccoon",
+    "name": {
+      "en": "Georgia Day",
+      "ua": "День Грузії "
+    },
+    "phrase": {
+      "en": "Bu harho puadeki wornujmof oszavah keluic gemma ulwit kilonub teumgi temzoc dabu loddocob dojewa ihze.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 91,
+    "age": 22,
+    "phone": "(577) 508-5571",
+    "image": "lion",
+    "name": {
+      "en": "Nettie Goodman",
+      "ua": "Нетті Гудман"
+    },
+    "phrase": {
+      "en": "Oc basaho covo fuvcerow enulivum vamvaz ceiw be oderiam mugifa ve osijizvec apu lim harew.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 92,
+    "age": 49,
+    "phone": "(675) 307-9168",
+    "image": "dog",
+    "name": {
+      "en": "Eugenia Hicks",
+      "ua": "Евгенія Хікс"
+    },
+    "phrase": {
+      "en": "Bi gopu lenwevfe cerba tovus ca igi nub ceh nuvohepo icotelu teliva ekacu zice geno.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 93,
+    "age": 55,
+    "phone": "(540) 909-4688",
+    "image": "owl",
+    "name": {
+      "en": "Harold Wagner",
+      "ua": "Гарольд Вагнер"
+    },
+    "phrase": {
+      "en": "Omiurwif wilbal doweliun jiarsa ho hilo wugefu hona gop guh sulifuh huf aj uwuzi tub.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "shoe"
+  },
+  {
+    "id": 94,
+    "age": 63,
+    "phone": "(950) 741-5164",
+    "image": "pig",
+    "name": {
+      "en": "Clyde Price",
+      "ua": "Цена Клайд "
+    },
+    "phrase": {
+      "en": "Ecelahi luvmuhar egurasis ma el zeviv wiah miblikzu tainifum povubaz bivu jub owavurihi ewegefiva sutmom.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 95,
+    "age": 19,
+    "phone": "(763) 745-4037",
+    "image": "dog",
+    "name": {
+      "en": "Alejandro Zimmerman",
+      "ua": "Алехандро Циммерман"
+    },
+    "phrase": {
+      "en": "Hobes nov hufwehta barhe pev verwa umlum ho suzit peom ije ri bovzivar zi ga.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 96,
+    "age": 37,
+    "phone": "(278) 434-7614",
+    "image": "raccoon",
+    "name": {
+      "en": "Owen Waters",
+      "ua": "Оуэн Води"
+    },
+    "phrase": {
+      "en": "Ha vi ag sib zevze on liibu ubu faem riwucco juvje lipuwze ti girbepi uci.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 97,
+    "age": 63,
+    "phone": "(210) 954-6804",
+    "image": "pig",
+    "name": {
+      "en": "Mario Hunter",
+      "ua": "Маріо Охотнік"
+    },
+    "phrase": {
+      "en": "Mo guhogi evati doz lowlim zomlem ujazihud ramuvuw ovelose wezal amke vigeace roszoped ru jipere.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "shoe"
+  },
+  {
+    "id": 98,
+    "age": 50,
+    "phone": "(336) 660-3117",
+    "image": "sheep",
+    "name": {
+      "en": "Lewis Terry",
+      "ua": "Л'юіс Террі"
+    },
+    "phrase": {
+      "en": "Bikesbo ohud bub funan linke hejutaf cotecu figepat la buzpiato himab wagof fesfujus ma duh.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 99,
+    "age": 58,
+    "phone": "(725) 959-4473",
+    "image": "cat",
+    "name": {
+      "en": "Jeremiah Tran",
+      "ua": "йеремія Тран"
+    },
+    "phrase": {
+      "en": "Jofo marad po ofi hakkojiv si cirgudte ujugi boriftap suaisij wetec om zo fiin kaeviim.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 100,
+    "age": 59,
+    "phone": "(217) 401-7100",
+    "image": "koala",
+    "name": {
+      "en": "Jeanette Bryan",
+      "ua": "Жанетт Брян"
+    },
+    "phrase": {
+      "en": "Acehed hapakjud uai iv apdejew medigvum aho ceg aguauvwu ovidi vencaki duauaro jub ingikwuc zus.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "shoe"
+  },
+  {
+    "id": 101,
+    "age": 63,
+    "phone": "(987) 991-2827",
+    "image": "cat",
+    "name": {
+      "en": "Hettie Zimmerman",
+      "ua": "Отличное Циммерман"
+    },
+    "phrase": {
+      "en": "Ib ibulufbe cigis remhe ehti utibesbu efaonuumi dazah osa lilsehuco gutolus vot nithijam tuw lali.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 102,
+    "age": 63,
+    "phone": "(271) 529-9557",
+    "image": "fox",
+    "name": {
+      "en": "Delia Ortiz",
+      "ua": "Делия Ортис"
+    },
+    "phrase": {
+      "en": "Higrewzi gak ne ehworis buj bojag tew da zu il lajhifo ohojiwte ve lejodlof lozli.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 103,
+    "age": 56,
+    "phone": "(716) 578-6715",
+    "image": "lion",
+    "name": {
+      "en": "Bobby Sparks",
+      "ua": "Боббі Спаркс"
+    },
+    "phrase": {
+      "en": "Fumib zuceuz idliwez tuudri petalur baoc ciza vubvam fuofjo cure la odhurli vinifah tazbe munsunka.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 104,
+    "age": 58,
+    "phone": "(275) 201-1247",
+    "image": "sheep",
+    "name": {
+      "en": "Mattie Griffin",
+      "ua": "Метті Гріффін"
+    },
+    "phrase": {
+      "en": "Deg giga dopuj ko pimwa lezuic petapun vaemeror wezzujper betgitbe wuvuw fotekpiw ofso cewavij narjasici.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 105,
+    "age": 32,
+    "phone": "(261) 863-8732",
+    "image": "sheep",
+    "name": {
+      "en": "Josie Maxwell",
+      "ua": "Джозі Максвелл"
+    },
+    "phrase": {
+      "en": "Dapfo siver mic dub ohoto lenluc uzeepiju acli pobah ajecik det desihe beh dogki boc.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "shoe"
+  },
+  {
+    "id": 106,
+    "age": 52,
+    "phone": "(805) 647-4620",
+    "image": "sheep",
+    "name": {
+      "en": "Daniel Ortega",
+      "ua": "Даніель Ортега"
+    },
+    "phrase": {
+      "en": "Rom usadac acolir gob ladujdun vipjis jum sotbe tulihi guejfo wo suninesa mateiba uhome ekaegiva.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 107,
+    "age": 44,
+    "phone": "(967) 840-4734",
+    "image": "koala",
+    "name": {
+      "en": "Dominic Vargas",
+      "ua": "Доминик Варгас"
+    },
+    "phrase": {
+      "en": "Miltuclak kofjocmap vogad na gavo ebeik eha ologagmom ac ojwo adde ufmo fededic se sih.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 108,
+    "age": 30,
+    "phone": "(385) 365-6724",
+    "image": "owl",
+    "name": {
+      "en": "Norman Bass",
+      "ua": "Норман Бас"
+    },
+    "phrase": {
+      "en": "Mige feren cow pewito hefze zamokel wikehu ehpofo regettut togbutdaj elitop ufu le ap opfifwe.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 109,
+    "age": 36,
+    "phone": "(262) 905-7100",
+    "image": "sheep",
+    "name": {
+      "en": "Estella Thomas",
+      "ua": "Естелла Томас"
+    },
+    "phrase": {
+      "en": "Lu po home gif emzipab aco nahsancuf ikwesmom boj ruvcop ce kibudli ov peruw ed.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "shoe"
+  },
+  {
+    "id": 110,
+    "age": 58,
+    "phone": "(802) 373-3247",
+    "image": "cat",
+    "name": {
+      "en": "Chester Holmes",
+      "ua": "Честер Холмс"
+    },
+    "phrase": {
+      "en": "Jagitvoh ufnod geojzeg zib gevade efewowi revgidfic enijitahi ir sim fuvoczin juanih odejag cu za.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 111,
+    "age": 19,
+    "phone": "(754) 649-2921",
+    "image": "owl",
+    "name": {
+      "en": "Sally Christensen",
+      "ua": "Саллі Кристенсен"
+    },
+    "phrase": {
+      "en": "Evguzu bewi zaceciimi imujupak fono nuleg iwedujmo dosoc muz ufegiava hopebev ar uj rimalhuf vu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 112,
+    "age": 52,
+    "phone": "(980) 398-8793",
+    "image": "penguin",
+    "name": {
+      "en": "Ina Potter",
+      "ua": "Іна Поттер"
+    },
+    "phrase": {
+      "en": "Ci mog kihi ej ra dif siwsiaga lokfaez walomo wa rulajna mewitdi rah ono namiswi.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 113,
+    "age": 42,
+    "phone": "(943) 218-6843",
+    "image": "koala",
+    "name": {
+      "en": "Don Romero",
+      "ua": "Дон Ромеро"
+    },
+    "phrase": {
+      "en": "Nobkofi muadi butin kotdil kunikog ma fo osmuizo pi rod cedado sel usonucmen hode venetiw.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 114,
+    "age": 42,
+    "phone": "(348) 800-5905",
+    "image": "dog",
+    "name": {
+      "en": "Iva Carroll",
+      "ua": "Іва Керролл"
+    },
+    "phrase": {
+      "en": "Hec akafeba cingornuj oci pensajah dar lelib uhu vidcasu mefi ajpat akeic ujsi vihaj eder.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 115,
+    "age": 21,
+    "phone": "(543) 352-7351",
+    "image": "koala",
+    "name": {
+      "en": "Leila Rodgers",
+      "ua": "Лейла Роджерс"
+    },
+    "phrase": {
+      "en": "Tujevje fonmo if kakuhza rottovzu pirfazzoc nitod nuhmetkah huaez tecine rot rij dis dagop mozuaabon.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "shoe"
+  },
+  {
+    "id": 116,
+    "age": 55,
+    "phone": "(314) 822-5325",
+    "image": "fox",
+    "name": {
+      "en": "Leah Flores",
+      "ua": "Лія Флорес"
+    },
+    "phrase": {
+      "en": "Lesi pabbaube mo sefup van boccalad ti wu eruwaj evelud se ridaiti lasit hacbarus ta.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 117,
+    "age": 20,
+    "phone": "(387) 544-6776",
+    "image": "dog",
+    "name": {
+      "en": "Thomas Lindsey",
+      "ua": "Томас Ліндсі"
+    },
+    "phrase": {
+      "en": "Av juboik aho cizsod sopezu doineput pat putdomzik wav hofih jepse agi cagwocmi maprar ji.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 118,
+    "age": 31,
+    "phone": "(924) 319-2410",
+    "image": "sheep",
+    "name": {
+      "en": "Alfred Higgins",
+      "ua": "Альфред Хіггінс"
+    },
+    "phrase": {
+      "en": "Ufohken de hohjemve vig daod naj irizawe koz cedek ik dapdaz ikabarte ogpazge paun adasefiw.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 119,
+    "age": 57,
+    "phone": "(943) 920-7183",
+    "image": "lion",
+    "name": {
+      "en": "Etta Caldwell",
+      "ua": "Етта Колдуелл"
+    },
+    "phrase": {
+      "en": "Gup litetde tu wucdenme jucme zogep po vilrekjeg rabu go levvalimi ufzu zu porfudki zod.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "boy"
+  },
+  {
+    "id": 120,
+    "age": 32,
+    "phone": "(756) 383-8483",
+    "image": "dog",
+    "name": {
+      "en": "Willie Pierce",
+      "ua": "Віллі Пірс"
+    },
+    "phrase": {
+      "en": "Ta uwheluti jo cunwu asajo zipgi lopmonvus fuvu taz zosedi vindan su mowwat hejid fofop.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 121,
+    "age": 27,
+    "phone": "(728) 751-1026",
+    "image": "penguin",
+    "name": {
+      "en": "Francis Porter",
+      "ua": "Френсіс Портер"
+    },
+    "phrase": {
+      "en": "Vihactuj veshastum za enuamwa ometic fimu na durilsin ozif we julibno ko lojuji ik saggakip.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 122,
+    "age": 58,
+    "phone": "(501) 297-1985",
+    "image": "penguin",
+    "name": {
+      "en": "Fred Obrien",
+      "ua": "Фред Обрайен"
+    },
+    "phrase": {
+      "en": "Pedehe zufjab uj mecaslen bekkuc ju uburoab bosjo idkegker ede bidir seh pebuma ro sulmaja.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 123,
+    "age": 22,
+    "phone": "(325) 948-8583",
+    "image": "cat",
+    "name": {
+      "en": "Stephen Craig",
+      "ua": "Стівен Крейг"
+    },
+    "phrase": {
+      "en": "Ebviw iluvate sehres pewiz fo zorzi kiekahid deznaka bo cimdudzad komu rufiwug jajsom bef utoekosu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 124,
+    "age": 40,
+    "phone": "(461) 847-6478",
+    "image": "cat",
+    "name": {
+      "en": "Louis Briggs",
+      "ua": "Луі Бріггс"
+    },
+    "phrase": {
+      "en": "Luz joera lanobaopa fiomigu gut vuili vat kuh votcoera omuowo ala ji wic podob fipdac.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 125,
+    "age": 22,
+    "phone": "(522) 208-3592",
+    "image": "owl",
+    "name": {
+      "en": "Garrett Ingram",
+      "ua": "Гаррет Інгрем"
+    },
+    "phrase": {
+      "en": "Ilejosu huzok pudfuwga ebzob neffet in ro zu coc piuv urumi duneptu nuliir vun coska.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 126,
+    "age": 20,
+    "phone": "(460) 860-6194",
+    "image": "dog",
+    "name": {
+      "en": "Abbie Bowers",
+      "ua": "Еббі Бауерс"
+    },
+    "phrase": {
+      "en": "Ta zin kejjuf dog ogiido gag ramto cit rorsuh wofkiv icizilrod cizoj tu dolej nec.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 127,
+    "age": 19,
+    "phone": "(528) 340-3253",
+    "image": "koala",
+    "name": {
+      "en": "Josie Hansen",
+      "ua": "Джозі Хансен"
+    },
+    "phrase": {
+      "en": "Osolum wanor owwac owa becwig zic ro itpej sa fafo tasulhop mo wiezi nuv jarbej.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    },
+    "video": "boy"
+  },
+  {
+    "id": 128,
+    "age": 45,
+    "phone": "(925) 497-3490",
+    "image": "lion",
+    "name": {
+      "en": "Helen Hogan",
+      "ua": "Хелен Хоган"
+    },
+    "phrase": {
+      "en": "Wel osi guvki loep noj loeboure tobe red kuloskoj teem aslapap sum fepfa wibvip tasjaltur.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 129,
+    "age": 42,
+    "phone": "(971) 788-5196",
+    "image": "fox",
+    "name": {
+      "en": "Margaret Turner",
+      "ua": "Маргарет Тернер"
+    },
+    "phrase": {
+      "en": "Vori wanho ime difwasuni fen molfelned siz godmerik vaonodik diulokoh du ma pu kovudgo tezu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 130,
+    "age": 44,
+    "phone": "(447) 457-7535",
+    "image": "dog",
+    "name": {
+      "en": "Bobby Warner",
+      "ua": "Боббі Уорнера"
+    },
+    "phrase": {
+      "en": "Ve luac arsoke comnef kigul jildop cozmep binobrog corar geedfum ezipavkik imaakiro wufuuti dakbal tirpovwi.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 131,
+    "age": 61,
+    "phone": "(212) 837-8240",
+    "image": "penguin",
+    "name": {
+      "en": "Noah Hamilton",
+      "ua": "Ной Хемілтон"
+    },
+    "phrase": {
+      "en": "Epamiwog okto duscumwoc zajap cowjo mebhu umuna dohwesevu apmesse suvvov su bahec bufsan acuuw af.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 132,
+    "age": 49,
+    "phone": "(458) 815-8104",
+    "image": "penguin",
+    "name": {
+      "en": "Ralph Lawrence",
+      "ua": "Ральф Лоуренс"
+    },
+    "phrase": {
+      "en": "Ani bowoj mocreri tig zob okosav eduosomo cudzi aluore holebu gak zamcoem vauraku duut kejzi.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 133,
+    "age": 58,
+    "phone": "(279) 809-3974",
+    "image": "koala",
+    "name": {
+      "en": "Cynthia Hill",
+      "ua": "Сінтія Хілл"
+    },
+    "phrase": {
+      "en": "Tek zodgoru du budi tu ahetib bed woejpua jek sefkaavo heskijrom jen dunnuzvab wez vigluv.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 134,
+    "age": 57,
+    "phone": "(362) 910-9887",
+    "image": "pig",
+    "name": {
+      "en": "Eugene Daniel",
+      "ua": "Юджин Деніел"
+    },
+    "phrase": {
+      "en": "Dois goetona beiz cis adjeltok tobsut popbowsi jogef nifkem fapsaba vazmic nev tem aj mavje.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 135,
+    "age": 60,
+    "phone": "(389) 945-6135",
+    "image": "pig",
+    "name": {
+      "en": "Adrian Walters",
+      "ua": "Едріан Уолтерс"
+    },
+    "phrase": {
+      "en": "Deh leluwi jatfappa ojjug essubes ranpis opitevu ozu kucagas daf rabo sua ihakke cigeb guj.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 136,
+    "age": 49,
+    "phone": "(747) 372-5210",
+    "image": "lion",
+    "name": {
+      "en": "Brett Patton",
+      "ua": "Бретт Паттон"
+    },
+    "phrase": {
+      "en": "Fiz mu er duhvuz avmiju tobiwu foz murzomo wejjegul dos ciweeg cuileke ohwezlup mozih awnoc.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 137,
+    "age": 41,
+    "phone": "(653) 659-9827",
+    "image": "sheep",
+    "name": {
+      "en": "Lydia Rhodes",
+      "ua": "Лідія Родос"
+    },
+    "phrase": {
+      "en": "Jiwmub duwfu gi ib cusmuc rob kavmap hewege apaogo budrok pappadmep col tumsut tizog oluitatot.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 138,
+    "age": 53,
+    "phone": "(667) 801-1789",
+    "image": "cat",
+    "name": {
+      "en": "Scott Phelps",
+      "ua": "Скотт Фелпс"
+    },
+    "phrase": {
+      "en": "Se zaikten innutlis palju nedle ma pih namzuuvi ravha mejcemne newimaj alseduaa feezu upoli lu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 139,
+    "age": 30,
+    "phone": "(686) 279-9394",
+    "image": "pig",
+    "name": {
+      "en": "Aiden Cole",
+      "ua": "Ейдан Коул"
+    },
+    "phrase": {
+      "en": "Hojabe wesu ze si azni jotivis cin so jo ajgur dihopew riocane ibikuej ol tudina.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 140,
+    "age": 60,
+    "phone": "(564) 705-7138",
+    "image": "dog",
+    "name": {
+      "en": "Charles Stephens",
+      "ua": "Чарльз Стефенс"
+    },
+    "phrase": {
+      "en": "Juspehec si ciguz subwubju ke atuozikig araazevav berak zusehjar tolir neb emegut jut zesdi gizgacira.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 141,
+    "age": 19,
+    "phone": "(566) 361-9343",
+    "image": "fox",
+    "name": {
+      "en": "Milton Page",
+      "ua": "Мільтон Стран"
+    },
+    "phrase": {
+      "en": "Ci hafmepopo ucu maekiasi cunimmi biinjom ku fepup izulaazo pi dakuhzi wolajub zojbifedo lipduh regug.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 142,
+    "age": 58,
+    "phone": "(453) 951-9827",
+    "image": "raccoon",
+    "name": {
+      "en": "Billy Hunter",
+      "ua": "Біллі Хантер"
+    },
+    "phrase": {
+      "en": "Wossibbu nacnahed izzi tovo je fa vi lac tuwgiweje gas barri jap imuvu zuvehep wivib.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 143,
+    "age": 47,
+    "phone": "(879) 810-1575",
+    "image": "owl",
+    "name": {
+      "en": "Millie Lucas",
+      "ua": "Міллі Лукас"
+    },
+    "phrase": {
+      "en": "Vif sedof ikuomsar ohognil hubatmur co kefof tit puhaneek nu gajigjow miake mote vo ujaaha.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 144,
+    "age": 18,
+    "phone": "(753) 301-2768",
+    "image": "pig",
+    "name": {
+      "en": "Warren French",
+      "ua": "Уоррен Француз"
+    },
+    "phrase": {
+      "en": "Jadosa hatlo how okagod ege levuv zucu wo nemituh wam takdujsoz sogvohina tugo ehumeb muafe.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 145,
+    "age": 40,
+    "phone": "(251) 417-6495",
+    "image": "cat",
+    "name": {
+      "en": "Ian Jensen",
+      "ua": "Іан Йенсен"
+    },
+    "phrase": {
+      "en": "Lapih ro meepu siruzzew uaiiw wovcad beda podor okfakcas cari madmat evanusot moleda litjojti rar.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 146,
+    "age": 42,
+    "phone": "(458) 619-2704",
+    "image": "penguin",
+    "name": {
+      "en": "Charlotte May",
+      "ua": "Шарлотта Может"
+    },
+    "phrase": {
+      "en": "Duak abhos zeuzrul rel bunnop kulame muiko od nic zo fofliwmim wesev fiper fawcavsuw bu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 147,
+    "age": 39,
+    "phone": "(877) 460-7623",
+    "image": "penguin",
+    "name": {
+      "en": "Juan Vasquez",
+      "ua": "Juan Vasquez"
+    },
+    "phrase": {
+      "en": "Tuaaho ijueger wezseba sugutoh hawacav gizekur ilupzoc dem fidasjih om fefi zotdaduf doru feswul bunabeve.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 148,
+    "age": 50,
+    "phone": "(734) 547-5783",
+    "image": "owl",
+    "name": {
+      "en": "Roxie Gutierrez",
+      "ua": "Роксі Гутьеррес"
+    },
+    "phrase": {
+      "en": "Ujagarob gelewu pumluvva rudaor fijnetjo jirkob vawuh emisune podni dopzu ezjomes taktavec re wib hujahzu.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  },
+  {
+    "id": 149,
+    "age": 49,
+    "phone": "(418) 703-2744",
+    "image": "lion",
+    "name": {
+      "en": "Lizzie Simpson",
+      "ua": "Ліззі Сімпсон"
+    },
+    "phrase": {
+      "en": "Evasubig va ebda zolduhzom wulsupe tibfilo fadwak kakotahe kegjah vugaput soinu fa zigi zun ofafa.",
+      "ua": "Не слід, однак, забувати, що реалізація намічених планових завдань потребують визначення й уточнення суттєвих фінансових та адміністративних умов."
+    }
+  }
+]
