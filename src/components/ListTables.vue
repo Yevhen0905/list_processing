@@ -21,7 +21,8 @@
 </template>
 
 <script setup>
-  import {ref, onMounted, watch} from 'vue';
+  import {ref, onMounted} from 'vue';
+  import {initIntersectionObserver} from '../composables/observe.js';
 
   const props = defineProps({
     listPeople: {
@@ -36,36 +37,7 @@
 
   const listItemRefs = ref([]);
 
-  let observer;
-
-  const initIntersectionObserver = () => {
-    const options = {
-      threshold: 0.3
-    };
-
-    observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, options);
-
-    listItemRefs.value.forEach((item) => {
-      observer.observe(item);
-    });
-  };
-
-  watch(listItemRefs.value, (newItem, oldItem) => {
-    oldItem.forEach((item) => {
-      observer.unobserve(item);
-    });
-    newItem.forEach((item) => {
-      observer.observe(item);
-    });
-  });
-
-  onMounted(initIntersectionObserver);
+  onMounted(() => initIntersectionObserver(0.3, 'visible', listItemRefs.value));
 </script>
 
 <style lang="scss" scoped>

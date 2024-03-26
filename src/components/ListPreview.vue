@@ -27,10 +27,7 @@
           loop
           preload="none"
         >
-          <source
-            :src="`src/assets/video/${people?.video}.mp4`"
-            type="video/mp4"
-          />
+          <source :src="`src/assets/video/${people?.video}.mp4`" type="video/mp4" />
         </video>
       </div>
       <div v-else class="tables_video no_video_available">
@@ -41,7 +38,11 @@
 </template>
 
 <script setup>
-  import {ref, onMounted, watch} from 'vue';
+  import {ref, onMounted} from 'vue';
+  import {
+    initIntersectionObserver,
+    initInterVideoObserver
+  } from '../composables/observe.js';
 
   const props = defineProps({
     listPeople: {
@@ -57,67 +58,8 @@
   const listItemRefs = ref([]);
   const listItemsVideo = ref([]);
 
-  let observer = null;
-  let observerVideo = null;
-
-  const initIntersectionObserver = () => {
-    const options = {
-      threshold: 0.1
-    };
-
-    observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, options);
-
-    listItemRefs.value.forEach((item) => {
-      observer.observe(item);
-    });
-  };
-
-  const initInterVideoObserver = () => {
-    const options = {
-      threshold: 1
-    };
-
-    observerVideo = new IntersectionObserver((entries) => {
-      entries.forEach(async (entry) => {
-        if (entry.isIntersecting) {
-          await entry.target.play();
-        } else {
-          await entry.target.pause();
-        }
-      });
-    }, options);
-
-    listItemsVideo.value.forEach((item) => {
-      observerVideo.observe(item);
-    });
-  };
-
-  watch(listItemRefs.value, (newItem, oldItem) => {
-    oldItem.forEach((item) => {
-      observer.unobserve(item);
-    });
-    newItem.forEach((item) => {
-      observer.observe(item);
-    });
-  });
-
-  watch(listItemsVideo.value, (newItem, oldItem) => {
-    oldItem.forEach((item) => {
-      observerVideo.unobserve(item);
-    });
-    newItem.forEach((item) => {
-      observerVideo.observe(item);
-    });
-  });
-
-  onMounted(initIntersectionObserver);
-  onMounted(initInterVideoObserver);
+  onMounted(() => initIntersectionObserver(0.3, 'visible', listItemRefs.value));
+  onMounted(() => initInterVideoObserver(1, listItemsVideo.value));
 </script>
 
 <style lang="scss" scoped>
