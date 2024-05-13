@@ -27,7 +27,10 @@
           loop
           preload="none"
         >
-          <source :src="`src/assets/video/${people?.video}.mp4`" type="video/mp4" />
+          <source
+            :src="`src/assets/video/${people?.video}.mp4`"
+            type="video/mp4"
+          />
         </video>
       </div>
       <div v-else class="tables_video no_video_available">

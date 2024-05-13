@@ -2,7 +2,9 @@
   <div class="container">
     <div class="wrapper_sorting_data">
       <div class="sorting_container">
-        <h3 class="title">{{ changeLanguageText(textOnThePage[0].sortingBy) }}</h3>
+        <h3 class="title">
+          {{ changeLanguageText(textOnThePage[0].sortingBy) }}
+        </h3>
         <SortingByKey
           :sorting-buttons="changeLanguageButtonSorting(sortingButtons)"
           v-model="sortingKey"
@@ -15,7 +17,9 @@
         />
       </div>
       <div class="filter_by_name">
-        <h3 class="title">{{ changeLanguageText(textOnThePage[0].searchByName) }}</h3>
+        <h3 class="title">
+          {{ changeLanguageText(textOnThePage[0].searchByName) }}
+        </h3>
         <input
           class="filter_input"
           v-model="searchByName"
@@ -48,10 +52,14 @@
           <Loader class="loader" v-if="loading" />
           <div v-else-if="filterAndSortedList.length">
             <template v-if="activeTab === 'tables'"
-              ><ListTables :is-language="isLanguage" :list-people="filterAndSortedList"
+              ><ListTables
+                :is-language="isLanguage"
+                :list-people="filterAndSortedList"
             /></template>
             <template v-if="activeTab === 'preview'"
-              ><ListPreview :is-language="isLanguage" :list-people="filterAndSortedList"
+              ><ListPreview
+                :is-language="isLanguage"
+                :list-people="filterAndSortedList"
             /></template>
           </div>
           <div v-else class="list_empty">
@@ -73,7 +81,14 @@
   import SortingByDirection from '../components/SortingByDirection.vue';
 
   import {useRoute, useRouter} from 'vue-router';
-  import {ref, computed, onMounted, watch, watchEffect, onBeforeMount} from 'vue';
+  import {
+    ref,
+    computed,
+    onMounted,
+    watch,
+    watchEffect,
+    onBeforeMount
+  } from 'vue';
 
   const route = useRoute();
   const router = useRouter();
@@ -174,13 +189,15 @@
 
     if (searchByName.value) {
       filteredList = filteredList.filter((name) => {
-        return name?.name.toLowerCase().includes(searchByName.value.toLowerCase());
+        return name?.name
+          .toLowerCase()
+          .includes(searchByName.value.toLowerCase());
       });
     }
 
     const key = sortingKey.value;
     const order = sortingDirect.value;
-    console.log(sortingKey.value);
+
     if (order) {
       if (order === 'asc') {
         return filteredList.slice().sort((a, b) => (a[key] > b[key] ? 1 : -1));

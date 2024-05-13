@@ -31,7 +31,7 @@
     }
   });
 
-  const emit = defineEmits(['update:modelValue', 'on-sort']);
+  const emit = defineEmits(['update:modelValue']);
 
   const checkedValue = computed({
     get() {
@@ -50,7 +50,6 @@
 
   const activateSorting = (value) => {
     checkedValue.value = value;
-    emit('on-sort');
   };
 </script>
 

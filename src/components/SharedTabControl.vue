@@ -1,6 +1,9 @@
 <template>
   <div
-    :class="['shared_tab_control', {shared_tab_control_active: isActiveTab(name)}]"
+    :class="[
+      'shared_tab_control',
+      {shared_tab_control_active: isActiveTab(name)}
+    ]"
     @click="handleClickTab"
   >
     <span class="shared_tab_control_text">

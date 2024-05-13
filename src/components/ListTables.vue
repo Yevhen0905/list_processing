@@ -14,7 +14,9 @@
           {{ people?.name }}
         </div>
       </div>
-      <div class="tables_age">{{ people?.age }} {{ isLanguage ? 'years' : 'років' }}</div>
+      <div class="tables_age">
+        {{ people?.age }} {{ isLanguage ? 'years' : 'років' }}
+      </div>
       <div class="tables_tel">{{ people?.phone }}</div>
     </div>
   </div>
