@@ -45,7 +45,7 @@
   import {
     initIntersectionObserver,
     initInterVideoObserver
-  } from '../composables/observe.js';
+  } from '../composables/observe.ts';
 
   const props = defineProps({
     listPeople: {

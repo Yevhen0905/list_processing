@@ -24,7 +24,7 @@
 
 <script setup>
   import {ref, onMounted} from 'vue';
-  import {initIntersectionObserver} from '../composables/observe.js';
+  import {initIntersectionObserver} from '../composables/observe.ts';
 
   const props = defineProps({
     listPeople: {
