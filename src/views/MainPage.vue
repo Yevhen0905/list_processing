@@ -3,7 +3,7 @@
     <div class="wrapper_sorting_data">
       <div class="sorting_container">
         <h3 class="title">
-          {{ changeLanguageText(textOnThePage[0].sortingBy) }}
+          {{ changeLanguageText(languageOnThePage[0].sortingBy) }}
         </h3>
         <SortingByKey
           :sorting-buttons="changeLanguageButtonSorting(sortingButtons)"
@@ -18,7 +18,7 @@
       </div>
       <div class="filter_by_name">
         <h3 class="title">
-          {{ changeLanguageText(textOnThePage[0].searchByName) }}
+          {{ changeLanguageText(languageOnThePage[0].searchByName) }}
         </h3>
         <input
           class="filter_input"
@@ -30,9 +30,9 @@
     </div>
     <div class="wrapper_btn">
       <button class="btn_reset" @click="resetSortingAndFiltering">
-        {{ changeLanguageText(textOnThePage[0].reset) }}
+        {{ changeLanguageText(languageOnThePage[0].reset) }}
       </button>
-      <button class="btn_language" @click="changeLanguageTables">
+      <button class="btn_language" @click="changeLanguage">
         {{ isLanguage ? 'ua' : 'en' }}
       </button>
     </div>
@@ -41,10 +41,10 @@
       <SharedTabs :active-tab="activeTab">
         <template #controls class="tab_view_control">
           <SharedTabControl name="tables" @click="changeTab('tables')">
-            {{ changeLanguageText(textOnThePage[0].tables) }}
+            {{ changeLanguageText(languageOnThePage[0].tables) }}
           </SharedTabControl>
           <SharedTabControl name="preview" @click="changeTab('preview')">
-            {{ changeLanguageText(textOnThePage[0].preview) }}
+            {{ changeLanguageText(languageOnThePage[0].preview) }}
           </SharedTabControl>
         </template>
 
@@ -63,7 +63,7 @@
             /></template>
           </div>
           <div v-else class="list_empty">
-            {{ changeLanguageText(textOnThePage[0].emptyTables) }}
+            {{ changeLanguageText(languageOnThePage[0].emptyTables) }}
           </div>
         </template>
       </SharedTabs>
@@ -71,7 +71,10 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+  import {useRoute, useRouter} from 'vue-router';
+  import {ref, computed, onMounted, watchEffect} from 'vue';
+
   import Loader from '../components/Loader.vue';
   import ListTables from '../components/ListTables.vue';
   import ListPreview from '../components/ListPreview.vue';
@@ -80,119 +83,54 @@
   import SortingByKey from '../components/SortingByKey.vue';
   import SortingByDirection from '../components/SortingByDirection.vue';
 
-  import {useRoute, useRouter} from 'vue-router';
-  import {
-    ref,
-    computed,
-    onMounted,
-    watch,
-    watchEffect,
-    onBeforeMount
-  } from 'vue';
+  import {sortingButtons, sortingDirection} from '../composables/useButtons.ts';
+  import {useToggleLanguage} from '../composables/useToggleLanguage.ts';
+
+  export interface ListItem {
+    id: number;
+    age: number;
+    phone: string;
+    image: string;
+    name: Record<string, string>;
+    phrase: Record<string, string>;
+    video?: string;
+  }
 
   const route = useRoute();
   const router = useRouter();
 
   const loading = ref(true);
   const searchByName = ref('');
-  const listPeople = ref([]);
-  const sortingKey = ref(route.query.key || '');
-  const sortingDirect = ref(route.query.order || '');
-  const selectedLanguage = ref('en');
-  const isLanguage = ref(true);
-  const activeTab = ref(route.query.tab || 'tables');
+  const sortingKey = ref<string>((route.query.key as string) || '');
+  const sortingDirect = ref<string>((route.query.order as string) || '');
+  const listPeople = ref<ListItem[]>([]);
+  const activeTab = ref<string>((route.query.tab as string) || 'tables');
 
-  const sortingButtons = ref([
-    {
-      text: {
-        en: 'ID',
-        ua: 'ID'
-      },
-      value: 'id'
-    },
-    {
-      text: {
-        en: 'name',
-        ua: 'ФІО'
-      },
-      value: 'name'
-    },
-    {
-      text: {
-        en: 'Age',
-        ua: 'Вік'
-      },
-      value: 'age'
-    }
-  ]);
+  const {
+    languageOnThePage,
+    isLanguage,
+    selectedLanguage,
+    changeLanguage,
+    changeLanguageText,
+    changeLanguageButtonSorting
+  } = useToggleLanguage();
 
-  const sortingDirection = ref([
-    {
-      text: {
-        en: 'ascending order',
-        ua: 'за зростанням'
-      },
-      value: 'asc'
-    },
-    {
-      text: {
-        en: 'descending order',
-        ua: 'за спаданням'
-      },
-      value: 'desc'
-    }
-  ]);
-
-  const textOnThePage = ref([
-    {
-      sortingBy: {
-        en: 'Sorting by',
-        ua: 'Сортування за'
-      },
-
-      searchByName: {
-        en: 'Search by name',
-        ua: 'Пошук за назвою'
-      },
-      reset: {
-        en: 'reset sorting and filtering',
-        ua: 'скинути сортування та фільтрацію'
-      },
-      tables: {
-        en: 'TABLES',
-        ua: 'ТАБЛИЦЯ'
-      },
-      preview: {
-        en: 'PREVIEW',
-        ua: "ПРЕВ'Ю"
-      },
-      emptyTables: {
-        en: 'not found',
-        ua: 'не знайдено'
-      }
-    }
-  ]);
-
-  const filterAndSortedList = computed(() => {
+  const filterAndSortedList = computed((): ListItem[] => {
     let filteredList = listPeople.value;
     const language = selectedLanguage.value;
 
     if (language) {
-      filteredList = filteredList.map((person) => {
-        return {
-          ...person,
-          name: person.name[language],
-          phrase: person.phrase[language]
-        };
-      });
+      filteredList = filteredList.map((person) => ({
+        ...person,
+        name: person.name[language],
+        phrase: person.phrase[language]
+      }));
     }
 
     if (searchByName.value) {
-      filteredList = filteredList.filter((name) => {
-        return name?.name
-          .toLowerCase()
-          .includes(searchByName.value.toLowerCase());
-      });
+      filteredList = filteredList.filter((person) =>
+        person.name?.toLowerCase().includes(searchByName.value.toLowerCase())
+      );
     }
 
     const key = sortingKey.value;
@@ -209,55 +147,31 @@
     return filteredList;
   });
 
-  const changeLanguageButtonSorting = (arr) => {
-    let filteredArr = arr;
-    const language = selectedLanguage.value;
-
-    if (language) {
-      filteredArr = filteredArr.map((item) => {
-        return {
-          ...item,
-          text: item.text[language]
-        };
-      });
-    }
-
-    return filteredArr;
-  };
-
-  const changeLanguageText = (obj) => {
-    const language = selectedLanguage.value;
-    return obj[language];
-  };
-
-  const changeLanguageTables = () => {
-    selectedLanguage.value = selectedLanguage.value === 'en' ? 'ua' : 'en';
-    isLanguage.value = !isLanguage.value;
-  };
-
-  const resetSortingAndFiltering = () => {
-    searchByName.value = sortingKey.value = sortingDirect.value = '';
+  const resetSortingAndFiltering = (): void => {
+    searchByName.value = '';
+    sortingKey.value = '';
+    sortingDirect.value = '';
     getFetch();
   };
 
-  const resetDirectionWhenChangeKey = () => {
+  const resetDirectionWhenChangeKey = (): void => {
     sortingDirect.value = '';
   };
 
-  const getFetch = async () => {
+  const getFetch = async (): Promise<void> => {
     try {
       const res = await fetch('./data.json');
-      const data = await res.json();
+      const data: ListItem[] = await res.json();
       setTimeout(() => {
         listPeople.value = data;
         loading.value = false;
       }, 1000);
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
   };
 
-  const changeTab = (tabName) => {
+  const changeTab = (tabName: string): void => {
     activeTab.value = tabName;
   };
 

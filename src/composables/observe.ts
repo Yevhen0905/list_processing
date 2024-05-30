@@ -25,17 +25,14 @@ export const initIntersectionObserver = (
     observer.observe(item);
   });
 
-  watch(
-    () => elements,
-    (newElements, oldElements) => {
-      oldElements.forEach((item) => {
-        observer.unobserve(item);
-      });
-      newElements.forEach((item) => {
-        observer.observe(item);
-      });
-    }
-  );
+  watch(elements, (newElements, oldElements) => {
+    oldElements.forEach((item) => {
+      observer.unobserve(item);
+    });
+    newElements.forEach((item) => {
+      observer.observe(item);
+    });
+  });
 };
 
 export const initInterVideoObserver = (
@@ -62,15 +59,12 @@ export const initInterVideoObserver = (
     observerVideo.observe(item);
   });
 
-  watch(
-    () => elements,
-    (newElements, oldElements) => {
-      oldElements.forEach((item) => {
-        observerVideo.unobserve(item);
-      });
-      newElements.forEach((item) => {
-        observerVideo.observe(item);
-      });
-    }
-  );
+  watch(elements, (newElements, oldElements) => {
+    oldElements.forEach((item) => {
+      observerVideo.unobserve(item);
+    });
+    newElements.forEach((item) => {
+      observerVideo.observe(item);
+    });
+  });
 };

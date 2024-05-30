@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
   import {onBeforeMount, ref, provide} from 'vue';
 
   const emit = defineEmits(['update:active-tab']);

@@ -2,7 +2,7 @@
   <div><div class="lds-hourglass"></div></div>
 </template>
 
-<script setup></script>
+<script setup lang="ts"></script>
 
 <style lang="scss">
   .lds-hourglass {
