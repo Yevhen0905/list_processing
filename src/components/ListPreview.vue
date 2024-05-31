@@ -46,10 +46,11 @@
     initIntersectionObserver,
     initInterVideoObserver
   } from '../composables/observe.ts';
+  import type {ListItem} from '../composables/useFilterAndSortList.ts';
 
   const props = defineProps({
     listPeople: {
-      type: Array,
+      type: Array as () => ListItem[],
       default: () => []
     },
     isLanguage: {
@@ -57,9 +58,8 @@
       required: true
     }
   });
-
-  const listItemRefs = ref([]);
-  const listItemsVideo = ref([]);
+  const listItemRefs = ref<HTMLElement[]>([]);
+  const listItemsVideo = ref<HTMLVideoElement[]>([]);
 
   onMounted(() => initIntersectionObserver(0.3, 'visible', listItemRefs.value));
   onMounted(() => initInterVideoObserver(1, listItemsVideo.value));

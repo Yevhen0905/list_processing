@@ -1,6 +1,22 @@
 import {ref} from 'vue';
 
-export const sortingButtons = ref([
+interface SortingButton {
+  text: {
+    en: string;
+    ua: string;
+  };
+  value: string;
+}
+
+interface SortingDirection {
+  text: {
+    en: string;
+    ua: string;
+  };
+  value: 'asc' | 'desc';
+}
+
+export const sortingButtons = ref<SortingButton[]>([
   {
     text: {
       en: 'ID',
@@ -24,7 +40,7 @@ export const sortingButtons = ref([
   }
 ]);
 
-export const sortingDirection = ref([
+export const sortingDirection = ref<SortingDirection[]>([
   {
     text: {
       en: 'ascending order',

@@ -85,67 +85,28 @@
 
   import {sortingButtons, sortingDirection} from '../composables/useButtons.ts';
   import {useToggleLanguage} from '../composables/useToggleLanguage.ts';
-
-  export interface ListItem {
-    id: number;
-    age: number;
-    phone: string;
-    image: string;
-    name: Record<string, string>;
-    phrase: Record<string, string>;
-    video?: string;
-  }
+  import {
+    ListItem,
+    useFilterAndSortedList
+  } from '../composables/useFilterAndSortList.ts';
 
   const route = useRoute();
   const router = useRouter();
 
   const loading = ref(true);
-  const searchByName = ref('');
-  const sortingKey = ref<string>((route.query.key as string) || '');
-  const sortingDirect = ref<string>((route.query.order as string) || '');
   const listPeople = ref<ListItem[]>([]);
   const activeTab = ref<string>((route.query.tab as string) || 'tables');
 
   const {
     languageOnThePage,
     isLanguage,
-    selectedLanguage,
     changeLanguage,
     changeLanguageText,
     changeLanguageButtonSorting
   } = useToggleLanguage();
 
-  const filterAndSortedList = computed((): ListItem[] => {
-    let filteredList = listPeople.value;
-    const language = selectedLanguage.value;
-
-    if (language) {
-      filteredList = filteredList.map((person) => ({
-        ...person,
-        name: person.name[language],
-        phrase: person.phrase[language]
-      }));
-    }
-
-    if (searchByName.value) {
-      filteredList = filteredList.filter((person) =>
-        person.name?.toLowerCase().includes(searchByName.value.toLowerCase())
-      );
-    }
-
-    const key = sortingKey.value;
-    const order = sortingDirect.value;
-
-    if (order) {
-      if (order === 'asc') {
-        return filteredList.slice().sort((a, b) => (a[key] > b[key] ? 1 : -1));
-      } else {
-        return filteredList.slice().sort((a, b) => (a[key] < b[key] ? 1 : -1));
-      }
-    }
-
-    return filteredList;
-  });
+  const {searchByName, sortingKey, sortingDirect, filterAndSortedList} =
+    useFilterAndSortedList(listPeople);
 
   const resetSortingAndFiltering = (): void => {
     searchByName.value = '';

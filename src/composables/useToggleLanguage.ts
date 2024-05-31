@@ -1,16 +1,29 @@
 import {ref, computed} from 'vue';
 
-export const useToggleLanguage = () => {
-  const isLanguage = ref(true);
-  const selectedLanguage = ref('en');
+type LanguageObject = {
+  en: string;
+  ua: string;
+};
 
-  const languageOnThePage = ref([
+type LanguageContent = {
+  sortingBy: LanguageObject;
+  searchByName: LanguageObject;
+  reset: LanguageObject;
+  tables: LanguageObject;
+  preview: LanguageObject;
+  emptyTables: LanguageObject;
+};
+
+export const useToggleLanguage = () => {
+  const isLanguage = ref<boolean>(true);
+  const selectedLanguage = ref<'en' | 'ua'>('en');
+
+  const languageOnThePage = ref<LanguageContent[]>([
     {
       sortingBy: {
         en: 'Sorting by',
         ua: 'Сортування за'
       },
-
       searchByName: {
         en: 'Search by name',
         ua: 'Пошук за назвою'
@@ -34,23 +47,15 @@ export const useToggleLanguage = () => {
     }
   ]);
 
-  const changeLanguageButtonSorting = (arr) => {
-    let filteredArr = arr;
+  const changeLanguageButtonSorting = (arr: Array<{text: LanguageObject}>) => {
     const language = selectedLanguage.value;
-
-    if (language) {
-      filteredArr = filteredArr.map((item) => {
-        return {
-          ...item,
-          text: item.text[language]
-        };
-      });
-    }
-
-    return filteredArr;
+    return arr.map((item) => ({
+      ...item,
+      text: item.text[language]
+    }));
   };
 
-  const changeLanguageText = (obj) => {
+  const changeLanguageText = (obj: LanguageObject) => {
     const language = selectedLanguage.value;
     return obj[language];
   };

@@ -25,10 +25,11 @@
 <script setup lang="ts">
   import {ref, onMounted} from 'vue';
   import {initIntersectionObserver} from '../composables/observe.ts';
+  import type {ListItem} from '../composables/useFilterAndSortList.ts';
 
   const props = defineProps({
     listPeople: {
-      type: Object,
+      type: Array as () => ListItem[],
       default: () => {}
     },
     isLanguage: {
@@ -37,7 +38,7 @@
     }
   });
 
-  const listItemRefs = ref([]);
+  const listItemRefs = ref<HTMLElement[]>([]);
 
   onMounted(() => initIntersectionObserver(0.3, 'visible', listItemRefs.value));
 </script>
