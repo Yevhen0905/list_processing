@@ -14,10 +14,11 @@
 
 <script setup lang="ts">
   import {computed} from 'vue';
+  import type {SortingButton} from '../composables/useButtons.ts';
 
   const props = defineProps({
     sortingButtons: {
-      type: Array,
+      type: Array as () => Array<SortingButton>,
       default: () => []
     },
     modelValue: {
@@ -32,18 +33,18 @@
     get() {
       return props.modelValue;
     },
-    set(value) {
+    set(value: string) {
       emit('update:modelValue', value);
     }
   });
 
-  const buttonsActive = (value) => {
+  const buttonsActive = (value: string) => {
     return {
       sorting_button_param_active: value === checkedValue.value
     };
   };
 
-  const activateSorting = (value) => {
+  const activateSorting = (value: string) => {
     checkedValue.value = value;
   };
 </script>

@@ -11,7 +11,7 @@
           @click="resetDirectionWhenChangeKey"
         />
         <SortingByDirection
-          :sorting-direction="changeLanguageButtonSorting(sortingDirection)"
+          :sorting-direction ="changeLanguageButtonSorting(sortingDirection)"
           v-model="sortingDirect"
           :disabled="!sortingKey"
         />
@@ -33,11 +33,11 @@
         {{ changeLanguageText(languageOnThePage[0].reset) }}
       </button>
       <button class="btn_language" @click="changeLanguage">
-        {{ isLanguage ? 'ua' : 'en' }}
+        {{ selectedLanguage }}
       </button>
     </div>
     <div class="tab_view">
-      <h2 class="title">LIST</h2>
+      <h2 class="title">{{ isLanguage ? 'LIST' : 'СПИСОК' }}</h2>
       <SharedTabs :active-tab="activeTab">
         <template #controls class="tab_view_control">
           <SharedTabControl name="tables" @click="changeTab('tables')">
@@ -100,13 +100,14 @@
   const {
     languageOnThePage,
     isLanguage,
+    selectedLanguage,
     changeLanguage,
     changeLanguageText,
     changeLanguageButtonSorting
   } = useToggleLanguage();
 
   const {searchByName, sortingKey, sortingDirect, filterAndSortedList} =
-    useFilterAndSortedList(listPeople);
+    useFilterAndSortedList(listPeople, selectedLanguage);
 
   const resetSortingAndFiltering = (): void => {
     searchByName.value = '';

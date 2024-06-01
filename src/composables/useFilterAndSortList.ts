@@ -1,9 +1,7 @@
 import type {Ref} from 'vue';
-import {ref, computed} from 'vue';
+import {ref, computed, watch} from 'vue';
 import {useRoute} from 'vue-router';
-import {useToggleLanguage} from './useToggleLanguage';
 
-const {selectedLanguage} = useToggleLanguage();
 export interface ListItem {
   id: number;
   age: number;
@@ -14,7 +12,7 @@ export interface ListItem {
   video?: string;
 }
 
-export const useFilterAndSortedList = (listPeople: Ref<ListItem[]>) => {
+export const useFilterAndSortedList = (listPeople: Ref<ListItem[]>, selectedLanguage: Ref<'en' | 'ua'>) => {
   const route = useRoute();
 
   const searchByName = ref<string>('');
@@ -22,20 +20,20 @@ export const useFilterAndSortedList = (listPeople: Ref<ListItem[]>) => {
   const sortingDirect = ref<string>((route.query.order as string) || '');
 
   const filterAndSortedList = computed((): ListItem[] => {
-    let filteredList = listPeople.value;
-    const language = selectedLanguage.value;
+    let filteredList = listPeople.value.slice();
+    let language = selectedLanguage.value;
 
     if (language) {
       filteredList = filteredList.map((person: ListItem) => ({
         ...person,
-        name: person.name[language],
-        phrase: person.phrase[language]
+        name: person.name[language] as unknown as Record<string, string>,
+        phrase: person.phrase[language] as unknown as Record<string, string>
       }));
     }
 
     if (searchByName.value) {
       filteredList = filteredList.filter((person: ListItem) =>
-        (person.name as string)
+        (person.name as unknown as string)
           ?.toLowerCase()
           .includes(searchByName.value.toLowerCase())
       );
@@ -45,15 +43,22 @@ export const useFilterAndSortedList = (listPeople: Ref<ListItem[]>) => {
     const order = sortingDirect.value;
 
     if (order && key) {
-      if (order === 'asc') {
-        return filteredList.slice().sort((a, b) => (a[key] > b[key] ? 1 : -1));
-      } else {
-        return filteredList.slice().sort((a, b) => (a[key] < b[key] ? 1 : -1));
-      }
+      filteredList = filteredList.sort((a, b) => {
+        const aValue = a[key];
+        const bValue = b[key];
+        if (aValue < bValue) return order === 'asc' ? -1 : 1;
+        if (aValue > bValue) return order === 'asc' ? 1 : -1;
+        return 0;
+      });
     }
 
     return filteredList;
   });
 
-  return {searchByName, sortingKey, sortingDirect, filterAndSortedList};
+  return {
+    searchByName,
+    sortingKey,
+    sortingDirect,
+    filterAndSortedList
+  };
 };

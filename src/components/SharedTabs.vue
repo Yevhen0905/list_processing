@@ -12,23 +12,24 @@
 <script setup lang="ts">
   import {onBeforeMount, ref, provide} from 'vue';
 
-  const emit = defineEmits(['update:active-tab']);
-  const props = defineProps({
-    activeTab: {
-      type: String,
-      default: ''
-    }
-  });
+  const emit = defineEmits<{
+    (e: 'update:active-tab', value: string): void;
+  }>();
 
-  const active = ref('');
+  const props = defineProps<{
+    activeTab: string;
+  }>();
+
+  const active = ref<string>('');
 
   onBeforeMount(() => {
     active.value = props.activeTab.toLowerCase();
   });
 
-  provide('isActiveTab', (name) => active.value === name.toLowerCase());
-  provide('activateTab', (name) => {
+  provide('isActiveTab', (name: string) => active.value === name.toLowerCase());
+  provide('activateTab', (name: string) => {
     active.value = name.toLowerCase();
+    emit('update:active-tab', active.value);
   });
 </script>
 

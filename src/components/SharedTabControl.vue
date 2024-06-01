@@ -15,18 +15,17 @@
 <script setup lang="ts">
   import {inject} from 'vue';
 
-  const props = defineProps({
-    name: {
-      type: String,
-      default: ''
-    }
-  });
+  const props = defineProps<{
+    name: string;
+  }>();
 
-  const isActiveTab = inject('isActiveTab');
-  const activateTab = inject('activateTab');
+  const isActiveTab = inject<(name: string) => boolean>('isActiveTab');
+  const activateTab = inject<(name: string) => void>('activateTab');
 
   const handleClickTab = () => {
-    activateTab(props.name);
+    if (activateTab) {
+      activateTab(props.name);
+    }
   };
 </script>
 

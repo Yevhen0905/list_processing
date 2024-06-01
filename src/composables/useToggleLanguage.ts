@@ -1,4 +1,5 @@
 import {ref, computed} from 'vue';
+import type {SortingButton} from '../composables/useButtons.ts';
 
 type LanguageObject = {
   en: string;
@@ -47,7 +48,7 @@ export const useToggleLanguage = () => {
     }
   ]);
 
-  const changeLanguageButtonSorting = (arr: Array<{text: LanguageObject}>) => {
+  const changeLanguageButtonSorting = (arr: Array<SortingButton>) => {
     const language = selectedLanguage.value;
     return arr.map((item) => ({
       ...item,
@@ -57,6 +58,7 @@ export const useToggleLanguage = () => {
 
   const changeLanguageText = (obj: LanguageObject) => {
     const language = selectedLanguage.value;
+
     return obj[language];
   };
 
