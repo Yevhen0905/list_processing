@@ -11,7 +11,7 @@
           @click="resetDirectionWhenChangeKey"
         />
         <SortingByDirection
-          :sorting-direction ="changeLanguageButtonSorting(sortingDirection)"
+          :sorting-direction="changeLanguageButtonSorting(sortingDirection)"
           v-model="sortingDirect"
           :disabled="!sortingKey"
         />
@@ -85,10 +85,8 @@
 
   import {sortingButtons, sortingDirection} from '../composables/useButtons.ts';
   import {useToggleLanguage} from '../composables/useToggleLanguage.ts';
-  import {
-    ListItem,
-    useFilterAndSortedList
-  } from '../composables/useFilterAndSortList.ts';
+  import type {ListItem} from '../composables/useFilterAndSortList.ts';
+  import {useFilterAndSortedList} from '../composables/useFilterAndSortList.ts';
 
   const route = useRoute();
   const router = useRouter();

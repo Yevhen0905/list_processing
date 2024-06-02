@@ -48,7 +48,9 @@ export const useToggleLanguage = () => {
     }
   ]);
 
-  const changeLanguageButtonSorting = (arr: Array<SortingButton>) => {
+  const changeLanguageButtonSorting = (
+    arr: Array<SortingButton>
+  ): Array<SortingButton> => {
     const language = selectedLanguage.value;
     return arr.map((item) => ({
       ...item,
@@ -62,10 +64,10 @@ export const useToggleLanguage = () => {
     return obj[language];
   };
 
-  const changeLanguage = computed(() => {
+  const changeLanguage = () => {
     selectedLanguage.value = selectedLanguage.value === 'en' ? 'ua' : 'en';
     isLanguage.value = !isLanguage.value;
-  });
+  };
 
   return {
     isLanguage,
